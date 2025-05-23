@@ -8,34 +8,34 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Your Name | Web Developer & Designer Portfolio",
-    template: "%s | Your Name Portfolio",
+    default: "Juanma MC | Web Developer & Designer Portfolio",
+    template: "%s | Juanma MC Portfolio",
   },
   description:
     "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
   keywords: ["web developer", "frontend developer", "designer", "portfolio", "react", "next.js", "javascript"],
-  authors: [{ name: "Your Name", url: "https://yourwebsite.com" }],
-  creator: "Your Name",
+  authors: [{ name: "Juanma MC", url: "https://yourwebsite.com" }],
+  creator: "Juanma MC",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yourwebsite.com",
-    title: "Your Name | Web Developer & Designer Portfolio",
+    title: "Juanma MC | Web Developer & Designer Portfolio",
     description:
       "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
-    siteName: "Your Name Portfolio",
+    siteName: "Juanma MC Portfolio",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Your Name Portfolio",
+        alt: "Juanma MC Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name | Web Developer & Designer Portfolio",
+    title: "Juanma MC | Web Developer & Designer Portfolio",
     description:
       "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
     creator: "@yourusername",
