@@ -53,7 +53,7 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
             <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Logo" />
             <AvatarFallback>DP</AvatarFallback>
           </Avatar>
-          <span className="hidden sm:inline">My Portfolio</span>
+          <span className="hidden lg:inline">My Portfolio</span>
         </Link>
 
         {/* Desktop Navigation */}

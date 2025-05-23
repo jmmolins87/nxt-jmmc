@@ -98,17 +98,18 @@ const resources = {
             "contact.description":
                 "I'm interested in freelance opportunities or full-time positions. If you have any questions or want to discuss a project, don't hesitate to contact me.",
             "contact.form.name": "Name",
-            "contact.form.email": "Email",
+            "contact.form.company": "Company Name",
             "contact.form.message": "Message",
             "contact.form.namePlaceholder": "Your name",
-            "contact.form.emailPlaceholder": "your@email.com",
+            "contact.form.companyPlaceholder": "Your company name",
             "contact.form.messagePlaceholder": "Your message...",
             "contact.form.send": "Send Message",
+            "contact.form.sending": "Sending Message",
             "contact.form.success": "Message sent successfully!",
 
             // Form Validation
             "validation.nameMin": "Name must be at least 2 characters",
-            "validation.emailInvalid": "Please enter a valid email",
+            "validation.companyMin": "Company must be at least 2 characters",
             "validation.messageMin": "Message must be at least 10 characters",
 
             // Footer
@@ -204,17 +205,18 @@ const resources = {
             "contact.description":
                 "Estoy interesado en oportunidades freelance o posiciones a tiempo completo. Si tienes alguna pregunta o quieres discutir un proyecto, no dudes en contactarme.",
             "contact.form.name": "Nombre",
-            "contact.form.email": "Email",
+            "contact.form.company": "Empresa",
             "contact.form.message": "Mensaje",
             "contact.form.namePlaceholder": "Tu nombre",
-            "contact.form.emailPlaceholder": "tu@email.com",
+            "contact.form.companyPlaceholder": "Nombre empresa",
             "contact.form.messagePlaceholder": "Tu mensaje...",
             "contact.form.send": "Enviar Mensaje",
+            "contact.form.sending": "Enviando Mensaje",
             "contact.form.success": "Mensaje enviado con éxito!",
 
             // Form Validation
             "validation.nameMin": "El nombre debe tener al menos 2 caracteres",
-            "validation.emailInvalid": "Introduce un email válido",
+            "validation.companyMin": "La empresa debe tener al menos 2 caracteres",
             "validation.messageMin": "El mensaje debe tener al menos 10 caracteres",
 
             // Footer

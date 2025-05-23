@@ -28,7 +28,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
 
     return (
         <section id="home" className="py-20 md:py-32 min-h-screen flex flex-col justify-center items-center">
-            <div className="container mx-auto px-4 md:px-6">
+            <div className="container mx-auto px-4 md:px-6 xl:w-2/3">
                 <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                     <div className="flex-1 space-y-4">
                         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
@@ -43,19 +43,19 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
                             </Button>
                         </div>
                         <div className="flex gap-4 pt-4">
-                            <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <Link href="https://github.com/jmmolins87" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                                 <Button variant="ghost" size="icon">
                                     <Github className="h-8 w-8" />
                                     <span className="sr-only">GitHub</span>
                                 </Button>
                             </Link>
-                            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <Link href="https://www.linkedin.com/in/juanma-molins-cortes" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                                 <Button variant="ghost" size="icon">
                                     <Linkedin className="h-8 w-8" />
                                     <span className="sr-only">LinkedIn</span>
                                 </Button>
                             </Link>
-                            <Link href="mailto:your@email.com" aria-label="Email Me">
+                            <Link href="mailto:jmmolins87@gmail.com" aria-label="Email Me">
                                 <Button variant="ghost" size="icon">
                                     <Mail className="h-8 w-8" />
                                     <span className="sr-only">Email</span>

@@ -32,7 +32,6 @@ export function AboutSection({ scrollToSection, jobs }: AboutSectionProps) {
                 <SectionHeading title={t("about.title")} />
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h1 className="text-3xl font-bold mb-8">Mi Línea del Tiempo Laboral</h1>
                         <VerticalTimeline items={jobs} />
                     </div>
                     <Separator className="block md:hidden" />

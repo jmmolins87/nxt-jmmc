@@ -23,19 +23,19 @@ export function Footer() {
                     © {new Date().getFullYear()} Juanma MC. {t("footer.rights")}
                 </p>
                 <div className="flex gap-4">
-                    <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/jmmolins87" target="_blank" rel="noopener noreferrer">
                         <Button variant="ghost" size="icon">
                             <Github className="h-5 w-5" />
                             <span className="sr-only">GitHub</span>
                         </Button>
                     </Link>
-                    <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://www.linkedin.com/in/juanma-molins-cortes" target="_blank" rel="noopener noreferrer">
                         <Button variant="ghost" size="icon">
                             <Linkedin className="h-5 w-5" />
                             <span className="sr-only">LinkedIn</span>
                         </Button>
                     </Link>
-                    <Link href="mailto:your@email.com">
+                    <Link href="mailto:jmmolins87@gmail.com">
                         <Button variant="ghost" size="icon">
                             <Mail className="h-5 w-5" />
                             <span className="sr-only">Email</span>
