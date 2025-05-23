@@ -8,12 +8,7 @@ import "@/lib/i18n"
 
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
-// import { HeroSection } from "@/components/sections/hero-section"
-// import { AboutSection } from "@/components/sections/about-section"
-// import { ProjectsSection } from "@/components/sections/projects-section"
-// import { SkillsSection } from "@/components/sections/skills-section"
-// import { ContactSection } from "@/components/sections/contact-section"
-// import { StructuredData } from "@/components/seo/structured-data"
+import { ContactSection } from "@/components/sections/ContactSection"
 
 export default function Portfolio() {
   const { t } = useTranslation()
@@ -138,13 +133,13 @@ export default function Portfolio() {
 
       <Header activeSection={activeSection} scrollToSection={scrollToSection} />
 
-      {/* <main className="pt-16">
-        <HeroSection scrollToSection={scrollToSection} />
-        <AboutSection scrollToSection={scrollToSection} />
-        <ProjectsSection projects={projects} />
-        <SkillsSection skills={skills} />
+      <main className="pt-16">
+        {/* <HeroSection scrollToSection={scrollToSection} /> */}
+        {/* <AboutSection scrollToSection={scrollToSection} /> */}
+        {/* <ProjectsSection projects={projects} /> */}
+        {/* <SkillsSection skills={skills} /> */}
         <ContactSection />
-      </main> */}
+      </main>
 
       <Footer />
     </div>

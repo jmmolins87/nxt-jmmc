@@ -18,7 +18,7 @@ export function Footer() {
 
     return (
         <footer className="py-6 border-t">
-            <div className="container px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left md:mx-auto">
+            <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
                 <p className="text-sm text-muted-foreground">
                     © {new Date().getFullYear()} Juanma MC. {t("footer.rights")}
                 </p>
