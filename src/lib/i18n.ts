@@ -41,6 +41,29 @@ const resources = {
             "about.webDev": "Web Developer",
             "about.frontendDev": "Frontend Developer",
             "about.present": "Present",
+            // Timeline About Section
+            "about.job.actuality":
+                "Present",
+            "about.job1.title":
+                "Front-end Developer at Eeveris",
+            "about.job1.description":
+                "Development of the Jazztel online store",
+            "about.job2.title":
+                "Front-end Developer at Nateevo",
+            "about.job2.description":
+                "At this company, I worked on various projects, including the FC Barcelona online store, the Almirall website, and projects for Mapfre",
+            "about.job3.title":
+                "Front-end Developer at Dimatica",
+            "about.job3.description":
+                "In this case, I worked on projects for companies that belonged to the company I was working for. working",
+            "about.job4.title":
+                "Front Developer at IBM",
+            "about.job4.description":
+                "Santander Bank App",
+            "about.job5.title":
+                "Front Developer at Accenture",
+            "about.job5.description":
+                "I continue developing the Banco Santander App,",
 
             // Projects Section
             "projects.title": "My Projects",
@@ -123,13 +146,29 @@ const resources = {
                 "Me especializo en tecnologías frontend como React, Next.js y Tailwind CSS, pero también tengo experiencia con backend y bases de datos.",
             "about.description4":
                 "Cuando no estoy codificando, disfruto de [tus hobbies o intereses], lo que me ayuda a mantener un equilibrio saludable entre el trabajo y la vida personal.",
-            "about.viewExperience": "Ver Experiencia",
-            "about.contactMe": "Contáctame",
-            "about.experience": "Experiencia Profesional",
-            "about.seniorDev": "Desarrollador Senior",
-            "about.webDev": "Desarrollador Web",
-            "about.frontendDev": "Desarrollador Frontend",
-            "about.present": "Presente",
+            // Timeline About Section
+            "about.job.actuality":
+                "Actualidad",
+            "about.job1.title":
+                "Desarrollador front-end en Eeveris",
+            "about.job1.description":
+                "Desarrollo de la tienda online de Jazztel",
+            "about.job2.title":
+                "Desarrollador front-end en Nateevo",
+            "about.job2.description":
+                "En esta empresa, trabajé en varios proyectos, incluyendo la tienda online del FC Barcelona, ​​la web de Almirall y proyectos para Mapfre",
+            "about.job3.title":
+                "Desarrollador front-end en Dimatica",
+            "about.job3.description":
+                "En este caso, trabajé en proyectos para empresas que pertenecían a la empresa para la que trabajaba",
+            "about.job4.title":
+                "Desarrollador front-end en IBM",
+            "about.job4.description":
+                "App del Banco Santander",
+            "about.job5.title":
+                "Desarrollador front-end en Accenture",
+            "about.job5.description":
+                "Sigo desarrollando la app del Banco Santander",
 
             // Projects Section
             "projects.title": "Mis Proyectos",

@@ -6,9 +6,15 @@ import { useTranslation } from "react-i18next"
 // Import i18n
 import "@/lib/i18n"
 
-import { Header } from "@/components/layout/Header"
-import { Footer } from "@/components/layout/Footer"
+import { AboutSection } from "@/components/sections/AboutSection"
 import { ContactSection } from "@/components/sections/ContactSection"
+import { Footer } from "@/components/layout/Footer"
+import { Header } from "@/components/layout/Header"
+import { HeroSection } from "@/components/sections/HeroSection"
+import { StructuredData } from "@/components/seo/StructuredData"
+import { ProjectsSection } from "@/components/sections/ProjectsSection"
+import { SkillsSection } from "@/components/sections/SkillsSection"
+
 
 export default function Portfolio() {
   const { t } = useTranslation()
@@ -97,6 +103,7 @@ export default function Portfolio() {
       { name: "HTML & CSS", level: 95 },
       { name: "JavaScript", level: 90 },
       { name: "React", level: 85 },
+      { name: "Angular", level: 85 },
       { name: "Next.js", level: 80 },
       { name: "Tailwind CSS", level: 90 },
     ],
@@ -116,9 +123,38 @@ export default function Portfolio() {
     ],
   }
 
+  // Timeline data
+  const jobs = [
+    {
+      date: "2018 - 2019",
+      title: t("about.job1.title"),
+      description: t("about.job1.description"),
+    },
+    {
+      date: "2019 - 2020",
+      title: t("about.job2.title"),
+      description: t("about.job2.description"),
+    },
+    {
+      date: "2020 - 2021",
+      title: t("about.job3.title"),
+      description: t("about.job3.description"),
+    },
+    {
+      date: "2021 - 2023",
+      title: t("about.job4.title"),
+      description: t("about.job4.description"),
+    },
+    {
+      date: `2023 - ${t("about.job.actuality")}`,
+      title: t("about.job5.title"),
+      description: t("about.job5.description"),
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
-      {/* <StructuredData
+      <StructuredData
         name="Your Name"
         jobTitle="Web Developer & Designer"
         description="Professional web developer and designer specializing in creating attractive and functional digital experiences."
@@ -129,15 +165,15 @@ export default function Portfolio() {
           "https://twitter.com/yourusername",
         ]}
         url="https://yourwebsite.com"
-      /> */}
+      />
 
       <Header activeSection={activeSection} scrollToSection={scrollToSection} />
 
       <main className="pt-16">
-        {/* <HeroSection scrollToSection={scrollToSection} /> */}
-        {/* <AboutSection scrollToSection={scrollToSection} /> */}
-        {/* <ProjectsSection projects={projects} /> */}
-        {/* <SkillsSection skills={skills} /> */}
+        <HeroSection scrollToSection={scrollToSection} />
+        <AboutSection scrollToSection={scrollToSection} jobs={jobs} />
+        <ProjectsSection projects={projects} />
+        <SkillsSection skills={skills} />
         <ContactSection />
       </main>
 

@@ -19,7 +19,7 @@ export function ContactSection() {
     const { t } = useTranslation()
 
     return (
-        <section id="contact" className="py-20">
+        <section id="contact" className="py-20 min-h-screen flex flex-col justify-center items-center">
             <div className="container px-4 md:px-6 mx-auto">
                 <SectionHeading title={t("contact.title")} />
                 <div className="grid md:grid-cols-2 gap-8 items-start">
