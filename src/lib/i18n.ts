@@ -27,9 +27,9 @@ const resources = {
             // About Section
             "about.title": "About Me",
             "about.description1":
-                "I'm a passionate web developer with experience creating engaging and functional websites and applications. My journey in web development began 10 years ago, when I started working with my father as a graphic designer at his printing company. What began as an immersion in the world of visual design evolved over time into my true passion: web application development, a field in which I've managed to combine creativity and technology to build innovative digital solutions.",
+                "I'm a passionate web developer with experience creating engaging and functional websites and applications. My journey in web development began 13 years ago, when I started working with my father as a graphic designer at his printing company. What began as an immersion in the world of visual design evolved over time into my true passion: web application development, a field in which I've managed to combine creativity and technology to build innovative digital solutions.",
             "about.description2":
-                "Since then, I've worked on various projects that have allowed me to hone my skills and knowledge. I specialize in front-end technologies such as Angular, React, Next.js, Bootstrap, and Tailwind CSS, but I also have experience with back-end and databases, which allows me to develop complete and functional projects.",
+                "Since then, I've worked on various projects that have allowed me to hone my skills and knowledge. I specialize in front-end technologies like Angular, React, Next.js, Bootstrap, and Tailwind CSS, but I also have experience with back-end technologies and databases like MongoDB and MSQL, allowing me to develop complete and functional projects.",
             "about.description3":
                 "When I'm not coding, I enjoy spending time with my friends, traveling, playing sports, spending time with my family, and socializing with new people—activities that help me maintain a healthy work-life balance. staff.", 
             "about.contactMe": "Contact Me",
@@ -132,9 +132,9 @@ const resources = {
             // About Section
             "about.title": "Sobre Mí",
             "about.description1":
-                "Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones atractivas y funcionales. Mi viaje en el desarrollo web comenzó hace 10 años, cuando empecé trabajando con mi padre como diseñador gráfico en su imprenta.Lo que comenzó como una inmersión en el mundo del diseño visual evolucionó con el tiempo hacia mi verdadera pasión: el desarrollo de aplicaciones web, un campo en el que he logrado combinar creatividad y tecnología para construir soluciones digitales innovadoras.",
+                "Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones atractivas y funcionales. Mi viaje en el desarrollo web comenzó hace 13 años, cuando empecé trabajando con mi padre como diseñador gráfico en su imprenta. Lo que comenzó como una inmersión en el mundo del diseño visual evolucionó con el tiempo hacia mi verdadera pasión: el desarrollo de aplicaciones web, un campo en el que he logrado combinar creatividad y tecnología para construir soluciones digitales innovadoras.",
             "about.description2":
-                "Desde entonces, he trabajado en diversos proyectos que me han permitido perfeccionar mis habilidades y conocimientos. Me especializo en tecnologías frontend como Angular, React, Next.js, Bootstrap y Tailwind CSS, pero también tengo experiencia con backend y bases de datos, lo que me permite desarrollar proyectos completos y funcionales.",
+                "Desde entonces, he trabajado en diversos proyectos que me han permitido perfeccionar mis habilidades y conocimientos. Me especializo en tecnologías frontend como Angular, React, Next.js, Bootstrap y Tailwind CSS, pero también tengo experiencia con el backend y bases de datos como MongoDB y MSQL, lo que me permite desarrollar proyectos completos y funcionales.",
             "about.description3":
                 "Cuando no estoy codificando, disfruto pasar tiempo con mis amigos, viajar, hacer deporte, estar con mi familia y socializar con gente nueva, actividades que me ayudan a mantener un equilibrio saludable entre el trabajo y la vida personal.",
             "about.contactMe": "Contactar",
