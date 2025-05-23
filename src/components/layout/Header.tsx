@@ -5,27 +5,27 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useTranslation } from "react-i18next"
-import { 
-  Menu, 
-  Home, 
-  User, 
-  Briefcase, 
-  Cpu, 
-  Contact 
+import {
+  Menu,
+  Home,
+  User,
+  Briefcase,
+  Cpu,
+  Contact
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { 
-  Avatar, 
-  AvatarFallback, 
-  AvatarImage 
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage
 } from "@/components/ui/avatar"
-import { 
-  Sheet, 
-  SheetContent, 
-  SheetHeader, 
-  SheetTitle, 
-  SheetTrigger 
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger
 } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
 import { ThemeToggle } from "@/components/ThemeToggle"
@@ -167,7 +167,7 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
               <Separator className="my-4" />
               <div className="flex items-center gap-2">
                 <LanguageToggle onLanguageChange={() => setIsSheetOpen(false)} />
-                <ThemeToggle onThemeChange={() => setIsSheetOpen(false)} />
+                <ThemeToggle />
               </div>
             </nav>
           </SheetContent>

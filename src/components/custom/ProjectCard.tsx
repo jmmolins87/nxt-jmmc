@@ -32,7 +32,7 @@ export function ProjectCard({ title, description, imageUrl, tags = [] }: Project
     <Card className="overflow-hidden group h-full flex flex-col">
       <div className="relative aspect-video overflow-hidden">
         <Image
-          src={imageUrl || "/placeholder.svg"}
+          src={imageUrl || "/vercel.svg"}
           alt={`Project: ${title} - ${description}`}
           width={500}
           height={300}

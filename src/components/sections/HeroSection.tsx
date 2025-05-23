@@ -66,7 +66,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
                     <div className="flex-1 flex justify-center md:justify-end">
                         <Avatar className="w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full border-4 border-primary/20">
                             <AvatarImage
-                                src="/placeholder.svg?height=400&width=400"
+                                src="/vercel.svg?height=400&width=400"
                                 alt="Your Name - Web Developer and Designer"
                                 className="object-cover"
                             />

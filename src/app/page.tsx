@@ -58,42 +58,42 @@ export default function Portfolio() {
       title: t("projects.ecommerce.title"),
       description: t("projects.ecommerce.description"),
       tags: ["Next.js", "Tailwind CSS", "Stripe", "Supabase"],
-      image: "/placeholder.svg?height=300&width=500&text=E-commerce",
+      image: "/vercel.svg?height=300&width=500&text=E-commerce",
     },
     {
       id: 2,
       title: t("projects.dashboard.title"),
       description: t("projects.dashboard.description"),
       tags: ["React", "D3.js", "TypeScript", "Firebase"],
-      image: "/placeholder.svg?height=300&width=500&text=Dashboard",
+      image: "/vercel.svg?height=300&width=500&text=Dashboard",
     },
     {
       id: 3,
       title: t("projects.fitness.title"),
       description: t("projects.fitness.description"),
       tags: ["React Native", "Redux", "Node.js", "MongoDB"],
-      image: "/placeholder.svg?height=300&width=500&text=Fitness+App",
+      image: "/vercel.svg?height=300&width=500&text=Fitness+App",
     },
     {
       id: 4,
       title: t("projects.education.title"),
       description: t("projects.education.description"),
       tags: ["Vue.js", "Express", "PostgreSQL", "AWS"],
-      image: "/placeholder.svg?height=300&width=500&text=Education",
+      image: "/vercel.svg?height=300&width=500&text=Education",
     },
     {
       id: 5,
       title: t("projects.social.title"),
       description: t("projects.social.description"),
       tags: ["React", "Socket.io", "GraphQL", "MongoDB"],
-      image: "/placeholder.svg?height=300&width=500&text=Social+Network",
+      image: "/vercel.svg?height=300&width=500&text=Social+Network",
     },
     {
       id: 6,
       title: t("projects.weather.title"),
       description: t("projects.weather.description"),
       tags: ["React", "OpenWeather API", "Chart.js", "Tailwind"],
-      image: "/placeholder.svg?height=300&width=500&text=Weather+App",
+      image: "/vercel.svg?height=300&width=500&text=Weather+App",
     },
   ]
 
@@ -169,7 +169,7 @@ export default function Portfolio() {
 
       <Header activeSection={activeSection} scrollToSection={scrollToSection} />
 
-      <main className="pt-16">
+      <main>
         <HeroSection scrollToSection={scrollToSection} />
         <AboutSection scrollToSection={scrollToSection} jobs={jobs} />
         <ProjectsSection projects={projects} />
