@@ -1,101 +1,152 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
+import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
+
+// Import i18n
+import "@/lib/i18n"
+
+import { Header } from "@/components/layout/Header"
+import { Footer } from "@/components/layout/Footer"
+// import { HeroSection } from "@/components/sections/hero-section"
+// import { AboutSection } from "@/components/sections/about-section"
+// import { ProjectsSection } from "@/components/sections/projects-section"
+// import { SkillsSection } from "@/components/sections/skills-section"
+// import { ContactSection } from "@/components/sections/contact-section"
+// import { StructuredData } from "@/components/seo/structured-data"
+
+export default function Portfolio() {
+  const { t } = useTranslation()
+  const [activeSection, setActiveSection] = useState("home")
+
+  // Track active section on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "projects", "skills", "contact"]
+      const scrollPosition = window.scrollY + 100
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const offsetTop = element.offsetTop
+          const offsetHeight = element.offsetHeight
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
+  // Sample project data
+  const projects = [
+    {
+      id: 1,
+      title: t("projects.ecommerce.title"),
+      description: t("projects.ecommerce.description"),
+      tags: ["Next.js", "Tailwind CSS", "Stripe", "Supabase"],
+      image: "/placeholder.svg?height=300&width=500&text=E-commerce",
+    },
+    {
+      id: 2,
+      title: t("projects.dashboard.title"),
+      description: t("projects.dashboard.description"),
+      tags: ["React", "D3.js", "TypeScript", "Firebase"],
+      image: "/placeholder.svg?height=300&width=500&text=Dashboard",
+    },
+    {
+      id: 3,
+      title: t("projects.fitness.title"),
+      description: t("projects.fitness.description"),
+      tags: ["React Native", "Redux", "Node.js", "MongoDB"],
+      image: "/placeholder.svg?height=300&width=500&text=Fitness+App",
+    },
+    {
+      id: 4,
+      title: t("projects.education.title"),
+      description: t("projects.education.description"),
+      tags: ["Vue.js", "Express", "PostgreSQL", "AWS"],
+      image: "/placeholder.svg?height=300&width=500&text=Education",
+    },
+    {
+      id: 5,
+      title: t("projects.social.title"),
+      description: t("projects.social.description"),
+      tags: ["React", "Socket.io", "GraphQL", "MongoDB"],
+      image: "/placeholder.svg?height=300&width=500&text=Social+Network",
+    },
+    {
+      id: 6,
+      title: t("projects.weather.title"),
+      description: t("projects.weather.description"),
+      tags: ["React", "OpenWeather API", "Chart.js", "Tailwind"],
+      image: "/placeholder.svg?height=300&width=500&text=Weather+App",
+    },
+  ]
+
+  // Skills data
+  const skills = {
+    frontend: [
+      { name: "HTML & CSS", level: 95 },
+      { name: "JavaScript", level: 90 },
+      { name: "React", level: 85 },
+      { name: "Next.js", level: 80 },
+      { name: "Tailwind CSS", level: 90 },
+    ],
+    backend: [
+      { name: "Node.js", level: 75 },
+      { name: "Express", level: 80 },
+      { name: "MongoDB", level: 70 },
+      { name: "PostgreSQL", level: 65 },
+      { name: "GraphQL", level: 60 },
+    ],
+    tools: [
+      { name: "Git & GitHub", level: 85 },
+      { name: "Docker", level: 70 },
+      { name: "AWS", level: 65 },
+      { name: "Figma", level: 75 },
+      { name: "VS Code", level: 90 },
+    ],
+  }
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-background">
+      {/* <StructuredData
+        name="Your Name"
+        jobTitle="Web Developer & Designer"
+        description="Professional web developer and designer specializing in creating attractive and functional digital experiences."
+        image="https://yourwebsite.com/profile-image.jpg"
+        sameAs={[
+          "https://github.com/yourusername",
+          "https://linkedin.com/in/yourusername",
+          "https://twitter.com/yourusername",
+        ]}
+        url="https://yourwebsite.com"
+      /> */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Header activeSection={activeSection} scrollToSection={scrollToSection} />
+
+      {/* <main className="pt-16">
+        <HeroSection scrollToSection={scrollToSection} />
+        <AboutSection scrollToSection={scrollToSection} />
+        <ProjectsSection projects={projects} />
+        <SkillsSection skills={skills} />
+        <ContactSection />
+      </main> */}
+
+      <Footer />
     </div>
-  );
+  )
 }
