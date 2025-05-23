@@ -24,15 +24,15 @@ export function ContactSection() {
                 <SectionHeading title={t("contact.title")} />
                 <div className="grid md:grid-cols-2 gap-8 items-start">
                     <div className="flex flex-col justify-between h-full space-y-4">
-                        <div className="flex flex-col justify-between md:h-1/3">
-                            <h3 className="text-xl font-semibold">{t("contact.subtitle")}</h3>
+                        <div className="flex flex-col justify-between md:h-1/3 gap-4">
+                            <h3 className="text-2xl font-semibold">{t("contact.subtitle")}</h3>
                             <p>{t("contact.description")}</p>
                         </div>
                         <div className="space-y-2">
-                            <div className="flex items-center gap-2">
+                            <Link href="mailto:jmmolins87@gmail.com" className="flex items-center gap-2 hover:underline">
                                 <Mail className="h-5 w-5 text-primary" />
                                 <span>jmmolins87@gmail.com</span>
-                            </div>
+                            </Link>
                             <div className="flex items-center gap-2">
                                 <Linkedin className="h-5 w-5 text-primary" />
                                 <Link

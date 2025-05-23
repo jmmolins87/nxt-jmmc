@@ -153,7 +153,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen ">
       <StructuredData
         name="Your Name"
         jobTitle="Web Developer & Designer"

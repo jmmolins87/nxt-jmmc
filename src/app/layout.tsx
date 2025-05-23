@@ -5,7 +5,7 @@ import "./globals.css"
 
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Toaster } from "@/components/ui/sonner"
-import ShaderBackground from "@/components/custom/ShaderBackground"
+import Background from "@/components/custom/Background"
 
 
 
@@ -75,7 +75,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <ShaderBackground />
+          <Background />
           {children}
         </ThemeProvider>
         <Toaster richColors />

@@ -26,7 +26,7 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ items }) => {
     }, []);
 
     return (
-        <div ref={ref} className="relative flex flex-col items-center py-8 md:overflow-y-scroll md:max-h-[calc(100vh-400px)]">
+        <div ref={ref} className="relative flex flex-col items-center py-8 md:overflow-y-scroll md:max-h-[calc(100vh-300px)] lg:max-h-[calc(100vh-400px)]">
             {/* Línea vertical */}
             <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-100 transition-all duration-1000 dark:bg-gray-800" aria-hidden="true" />
             <ul className="w-full max-w-xl space-y-12">

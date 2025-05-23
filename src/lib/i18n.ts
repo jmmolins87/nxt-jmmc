@@ -27,43 +27,35 @@ const resources = {
             // About Section
             "about.title": "About Me",
             "about.description1":
-                "I'm a passionate web developer with experience in creating attractive and functional websites and applications.",
+                "I'm a passionate web developer with experience creating engaging and functional websites and applications. My journey in web development began 10 years ago, when I started working with my father as a graphic designer at his printing company. What began as an immersion in the world of visual design evolved over time into my true passion: web application development, a field in which I've managed to combine creativity and technology to build innovative digital solutions.",
             "about.description2":
-                "My journey in web development began X years ago, and since then I've worked on various projects that have allowed me to perfect my skills and knowledge.",
+                "Since then, I've worked on various projects that have allowed me to hone my skills and knowledge. I specialize in front-end technologies such as Angular, React, Next.js, Bootstrap, and Tailwind CSS, but I also have experience with back-end and databases, which allows me to develop complete and functional projects.",
             "about.description3":
-                "I specialize in frontend technologies like React, Next.js and Tailwind CSS, but I also have experience with backend and databases.",
-            "about.description4":
-                "When I'm not coding, I enjoy [your hobbies or interests], which helps me maintain a healthy work-life balance.",
-            "about.viewExperience": "View Experience",
+                "When I'm not coding, I enjoy spending time with my friends, traveling, playing sports, spending time with my family, and socializing with new people—activities that help me maintain a healthy work-life balance. staff.", 
             "about.contactMe": "Contact Me",
-            "about.experience": "Professional Experience",
-            "about.seniorDev": "Senior Developer",
-            "about.webDev": "Web Developer",
-            "about.frontendDev": "Frontend Developer",
-            "about.present": "Present",
             // Timeline About Section
             "about.job.actuality":
                 "Present",
             "about.job1.title":
                 "Front-end Developer at Eeveris",
             "about.job1.description":
-                "Development of the Jazztel online store",
+                "Development of Jazztel's online store. I was almost 100% dedicated to the website design and layout, performing tasks alongside the development side.",
             "about.job2.title":
                 "Front-end Developer at Nateevo",
             "about.job2.description":
-                "At this company, I worked on various projects, including the FC Barcelona online store, the Almirall website, and projects for Mapfre",
+                "At this company, I worked on several projects, including the FC Barcelona online store, the Almirall website, and projects for Mapfre. I was primarily involved in layout and functionality for the sites, even though most were built with a CMS.",
             "about.job3.title":
                 "Front-end Developer at Dimatica",
             "about.job3.description":
-                "In this case, I worked on projects for companies that belonged to the company I was working for. working",
+                "In this case, I worked on projects for companies that were owned by the company itself.They were CMS projects, so I was also involved in the design and functionality of the front- end.I also did some interviews and managed a team.",
             "about.job4.title":
                 "Front Developer at IBM",
             "about.job4.description":
-                "Santander Bank App",
+                "This time, I was involved in the design of the Banco Santander app.I also created components in Angular, giving them functionality, and reading data from the back end.",
             "about.job5.title":
                 "Front Developer at Accenture",
             "about.job5.description":
-                "I continue developing the Banco Santander App,",
+                "For supplier reasons, I changed companies, but I'm still working on the same Banco Santander project, but creating reusable components in StencilJS for the rest of the project's Squads.I'm currently working on the front-end side, calculating rates, loans, leasing, and guarantees.",
 
             // Projects Section
             "projects.title": "My Projects",
@@ -140,36 +132,35 @@ const resources = {
             // About Section
             "about.title": "Sobre Mí",
             "about.description1":
-                "Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones atractivas y funcionales.",
+                "Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones atractivas y funcionales. Mi viaje en el desarrollo web comenzó hace 10 años, cuando empecé trabajando con mi padre como diseñador gráfico en su imprenta.Lo que comenzó como una inmersión en el mundo del diseño visual evolucionó con el tiempo hacia mi verdadera pasión: el desarrollo de aplicaciones web, un campo en el que he logrado combinar creatividad y tecnología para construir soluciones digitales innovadoras.",
             "about.description2":
-                "Mi viaje en el desarrollo web comenzó hace X años, y desde entonces he trabajado en diversos proyectos que me han permitido perfeccionar mis habilidades y conocimientos.",
+                "Desde entonces, he trabajado en diversos proyectos que me han permitido perfeccionar mis habilidades y conocimientos. Me especializo en tecnologías frontend como Angular, React, Next.js, Bootstrap y Tailwind CSS, pero también tengo experiencia con backend y bases de datos, lo que me permite desarrollar proyectos completos y funcionales.",
             "about.description3":
-                "Me especializo en tecnologías frontend como React, Next.js y Tailwind CSS, pero también tengo experiencia con backend y bases de datos.",
-            "about.description4":
-                "Cuando no estoy codificando, disfruto de [tus hobbies o intereses], lo que me ayuda a mantener un equilibrio saludable entre el trabajo y la vida personal.",
+                "Cuando no estoy codificando, disfruto pasar tiempo con mis amigos, viajar, hacer deporte, estar con mi familia y socializar con gente nueva, actividades que me ayudan a mantener un equilibrio saludable entre el trabajo y la vida personal.",
+            "about.contactMe": "Contactar",
             // Timeline About Section
             "about.job.actuality":
                 "Actualidad",
             "about.job1.title":
-                "Desarrollador front-end en Eeveris",
+                "Desarrollador front-end en Eeveris.",
             "about.job1.description":
-                "Desarrollo de la tienda online de Jazztel",
+                "Desarrollo de la tienda online de Jazztel. Me dedicaba casi al 100% en el tema del diseño y maquetación de la web, desempeñando tareas conjuntamente con la parte del desarrollo.",
             "about.job2.title":
                 "Desarrollador front-end en Nateevo",
             "about.job2.description":
-                "En esta empresa, trabajé en varios proyectos, incluyendo la tienda online del FC Barcelona, ​​la web de Almirall y proyectos para Mapfre",
+                "En esta empresa, trabajé en varios proyectos, incluyendo la tienda online del FC Barcelona, ​​la web de Almirall y proyectos para Mapfre. Me dedicaba sobre todo el la parte de maquetación y darle funcionalidad a los sitios, aún que la mayoría estban hechos con CMS.",
             "about.job3.title":
                 "Desarrollador front-end en Dimatica",
             "about.job3.description":
-                "En este caso, trabajé en proyectos para empresas que pertenecían a la empresa para la que trabajaba",
+                "En este caso, trabajé en proyectos para empresas que pertenecían a la propia empresas. Eran proyectos con CMS así que también estuve dedicado con el sector del diseño y funcionalidad por parte del Front-End. También me dedicaba a hacer alguna entrevista y manejar un equipo.",
             "about.job4.title":
                 "Desarrollador front-end en IBM",
             "about.job4.description":
-                "App del Banco Santander",
+                "En esta ocasión estuve dedicado en la parte de diseño de la App del Banco Santander. También creando componentes en Angular y dándoles funcionalidad y leyendo datos de parte del Back-End",
             "about.job5.title":
                 "Desarrollador front-end en Accenture",
             "about.job5.description":
-                "Sigo desarrollando la app del Banco Santander",
+                "Por motivos de proveedores, me cambié de empresa pero sigo en el mismo proyecto del Banco Santander, pero haciendo componentes reutilizables en StencilJS para el resto de Squads del proyecto. Acutalmente estoy en la parte de Front-End calculando tasas, créditos, leasing y avales",
 
             // Projects Section
             "projects.title": "Mis Proyectos",

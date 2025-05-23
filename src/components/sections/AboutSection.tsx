@@ -39,7 +39,6 @@ export function AboutSection({ scrollToSection, jobs }: AboutSectionProps) {
                         <p className="text-lg">{t("about.description1")}</p>
                         <p>{t("about.description2")}</p>
                         <p>{t("about.description3")}</p>
-                        <p>{t("about.description4")}</p>
                     </div>
                 </div>
             </div>
