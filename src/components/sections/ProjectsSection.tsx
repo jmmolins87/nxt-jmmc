@@ -14,6 +14,8 @@ type Project = {
     description: string
     tags: string[]
     image: string
+    demo: string
+    code: string
 }
   
 interface ProjectsSectionProps {
@@ -37,6 +39,8 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                             description={project.description}
                             imageUrl={project.image}
                             tags={project.tags}
+                            demo={project.demo}
+                            code={project.code}
                         />
                     ))}
                 </div>

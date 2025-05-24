@@ -47,6 +47,33 @@ export default function DynamicBackground() {
         <div className="fixed inset-0 -z-10 overflow-hidden transition-colors duration-1000">
             <div className={`absolute inset-0 ${isDark ? 'bg-black' : 'bg-white'} transition-colors duration-1000`} />
 
+            {/* Grid overlay */}
+            <svg
+                className="absolute inset-0 w-full h-full opacity-40 pointer-events-none"
+                style={{ zIndex: 1 }}
+                width="100%"
+                height="100%"
+            >
+                <defs>
+                    {/* Cuadrícula simple */}
+                    <pattern
+                        id="grid"
+                        width="100"
+                        height="100"
+                        patternUnits="userSpaceOnUse"
+                    >
+                        <path
+                            d="M 100 0 L 0 0 0 100"
+                            fill="none"
+                            stroke={isDark ? "#fff2" : "#ccc"} // <-- Cambiado para modo light
+                            strokeWidth="1"
+                        />
+                    </pattern>
+                </defs>
+                {/* Cuadrícula */}
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+
             {gradients.map((g, i) => (
                 <motion.div
                     key={i}

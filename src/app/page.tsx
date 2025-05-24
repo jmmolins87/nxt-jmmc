@@ -57,8 +57,10 @@ export default function Portfolio() {
       id: 1,
       title: t("projects.ecommerce.title"),
       description: t("projects.ecommerce.description"),
-      tags: ["Next.js", "Tailwind CSS", "Stripe", "Supabase"],
-      image: "/vercel.svg?height=300&width=500&text=E-commerce",
+      tags: ["Angular19", "Sass", "Node.js", "Netlify"],
+      image: "/projects/flordloto.png",
+      demo: "https://flordlotosegovia.com/",
+      code: "https://github.com/jmmolins87/ng-flor-loto"
     },
     {
       id: 2,
@@ -66,6 +68,8 @@ export default function Portfolio() {
       description: t("projects.dashboard.description"),
       tags: ["React", "D3.js", "TypeScript", "Firebase"],
       image: "/vercel.svg?height=300&width=500&text=Dashboard",
+      demo: "",
+      code: ""
     },
     {
       id: 3,
@@ -73,6 +77,8 @@ export default function Portfolio() {
       description: t("projects.fitness.description"),
       tags: ["React Native", "Redux", "Node.js", "MongoDB"],
       image: "/vercel.svg?height=300&width=500&text=Fitness+App",
+      demo: "",
+      code: ""
     },
     {
       id: 4,
@@ -80,6 +86,8 @@ export default function Portfolio() {
       description: t("projects.education.description"),
       tags: ["Vue.js", "Express", "PostgreSQL", "AWS"],
       image: "/vercel.svg?height=300&width=500&text=Education",
+      demo: "",
+      code: ""
     },
     {
       id: 5,
@@ -87,6 +95,8 @@ export default function Portfolio() {
       description: t("projects.social.description"),
       tags: ["React", "Socket.io", "GraphQL", "MongoDB"],
       image: "/vercel.svg?height=300&width=500&text=Social+Network",
+      demo: "",
+      code: ""
     },
     {
       id: 6,
@@ -94,6 +104,8 @@ export default function Portfolio() {
       description: t("projects.weather.description"),
       tags: ["React", "OpenWeather API", "Chart.js", "Tailwind"],
       image: "/vercel.svg?height=300&width=500&text=Weather+App",
+      demo: "",
+      code: ""
     },
   ]
 
@@ -155,7 +167,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen ">
       <StructuredData
-        name="Your Name"
+        name="Juanma MC"
         jobTitle="Web Developer & Designer"
         description="Professional web developer and designer specializing in creating attractive and functional digital experiences."
         image="https://yourwebsite.com/profile-image.jpg"

@@ -61,7 +61,7 @@ const resources = {
             "projects.title": "My Projects",
             "projects.ecommerce.title": "E-commerce Platform",
             "projects.ecommerce.description":
-                "A complete e-commerce platform with shopping cart, payments and product management.",
+                "It's a flower shop window. While shopping in the store, you can still make purchases through other platforms like Glovo or Uber.",
             "projects.dashboard.title": "Analytics Dashboard",
             "projects.dashboard.description":
                 "Control panel to visualize business data with interactive charts and custom reports.",
@@ -166,7 +166,7 @@ const resources = {
             "projects.title": "Mis Proyectos",
             "projects.ecommerce.title": "Plataforma E-commerce",
             "projects.ecommerce.description":
-                "Una plataforma de comercio electrónico completa con carrito de compras, pagos y gestión de productos.",
+                "Es un escaparate de una tienda de flores. Pendiente del carrito de compra y compras en la propia tienda, se pueden realizar compras a través de otras plataformas como Glovo o Uber.",
             "projects.dashboard.title": "Dashboard Analytics",
             "projects.dashboard.description":
                 "Panel de control para visualizar datos de negocio con gráficos interactivos y reportes personalizados.",

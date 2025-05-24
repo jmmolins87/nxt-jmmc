@@ -23,7 +23,7 @@ export function ContactSection() {
             <div className="container px-4 md:px-6 mx-auto xl:w-2/3">
                 <SectionHeading title={t("contact.title")} />
                 <div className="grid md:grid-cols-2 gap-8 items-start">
-                    <div className="flex flex-col justify-between h-full space-y-4">
+                    <div className="flex flex-col justify-around h-full space-y-4">
                         <div className="flex flex-col justify-between md:h-1/3 gap-4">
                             <h3 className="text-2xl font-semibold">{t("contact.subtitle")}</h3>
                             <p>{t("contact.description")}</p>
