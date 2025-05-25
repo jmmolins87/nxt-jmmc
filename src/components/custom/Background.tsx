@@ -65,7 +65,7 @@ export default function DynamicBackground() {
                         <path
                             d="M 100 0 L 0 0 0 100"
                             fill="none"
-                            stroke={isDark ? "#fff2" : "#ccc"} // <-- Cambiado para modo light
+                            stroke={isDark ? "#fff5" : "#ccc"}
                             strokeWidth="1"
                         />
                     </pattern>

@@ -4,6 +4,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { useTranslation } from "react-i18next"
 import {
   Menu,
@@ -15,11 +16,6 @@ import {
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage
-} from "@/components/ui/avatar"
 import {
   Sheet,
   SheetContent,
@@ -49,11 +45,26 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
           onClick={() => scrollToSection("home")}
           className="text-xl font-bold flex items-center gap-2"
         >
-          <Avatar className="h-8 w-8">
-            <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Logo" />
-            <AvatarFallback>DP</AvatarFallback>
-          </Avatar>
-          <span className="hidden lg:inline">My Portfolio</span>
+          {/* Logo para modo claro */}
+          <Image
+            src="/logo/jmmc_logo_negro.svg"
+            alt="Logo"
+            title="Logo"
+            width={60}
+            height={65}
+            className="h-8 block dark:hidden"
+            priority
+          />
+          {/* Logo para modo oscuro */}
+          <Image
+            src="/logo/jmmc_logo_blanco.svg"
+            alt="Logo"
+            title="Logo"
+            width={60}
+            height={65}
+            className="h-8 hidden dark:block"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

@@ -11,6 +11,7 @@ import { SectionHeading } from "@/components/custom/SectionHeading"
 type Project = {
     id: number
     title: string
+    subtitle: string
     description: string
     tags: string[]
     image: string
@@ -30,12 +31,13 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
     return (
         <section id="projects" className="py-20 min-h-screen flex flex-col justify-center items-center">
             <div className="container mx-auto px-4 md:px-6">
-                <SectionHeading title={t("projects.title")} />
+                <SectionHeading title={t("projects.title")} subtitle={t("projects.subtitle")} />
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.id}
                             title={project.title}
+                            subtitle={project.subtitle}
                             description={project.description}
                             imageUrl={project.image}
                             tags={project.tags}

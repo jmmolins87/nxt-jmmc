@@ -33,8 +33,8 @@ export function LanguageToggle({ onLanguageChange }: LanguageToggleProps) {
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => changeLanguage("en")}>English</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => changeLanguage("es")}>Español</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage("es")} className="cursor-pointer">Español</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage("en")} className="cursor-pointer">English</DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
     )

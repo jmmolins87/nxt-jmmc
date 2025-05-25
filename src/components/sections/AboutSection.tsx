@@ -30,7 +30,7 @@ export function AboutSection({ scrollToSection, jobs }: AboutSectionProps) {
         <section id="about" className="py-20 bg-muted/50 min-h-screen flex flex-col justify-center items-center">
             <div className="container mx-auto px-4 md:px-6">
                 <SectionHeading title={t("about.title")} />
-                <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <VerticalTimeline items={jobs} />
                     </div>

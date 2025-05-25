@@ -33,48 +33,58 @@ const resources = {
             "about.description3":
                 "When I'm not coding, I enjoy spending time with my friends, traveling, playing sports, spending time with my family, and socializing with new people—activities that help me maintain a healthy work-life balance. staff.", 
             "about.contactMe": "Contact Me",
+
             // Timeline About Section
             "about.job.actuality":
                 "Present",
-            "about.job1.title":
+            "about.freelance.title":
+                "Freelance.",
+            "about.freelance.description":
+                "This was the beginning of my professional career. I started working with my father at his printing shop, where I was in charge of graphic design and layout of the projects. Over time, I acquired knowledge in web development, which allowed me to combine both disciplines.",
+            "about.servegraf.title":
+                "Graphic designer at Servegraf.",
+            "about.servegraf.description":
+                "I designed graphic materials and branding for various clients. I also handled the layout of designs for printing. And of course, I continued learning about web development.",
+            "about.everis.title":
                 "Front-end Developer at Eeveris",
-            "about.job1.description":
+            "about.everis.description":
                 "Development of Jazztel's online store. I was almost 100% dedicated to the website design and layout, performing tasks alongside the development side.",
-            "about.job2.title":
+            "about.nateevo.title":
                 "Front-end Developer at Nateevo",
-            "about.job2.description":
+            "about.nateevo.description":
                 "At this company, I worked on several projects, including the FC Barcelona online store, the Almirall website, and projects for Mapfre. I was primarily involved in layout and functionality for the sites, even though most were built with a CMS.",
-            "about.job3.title":
+            "about.dimatica.title":
                 "Front-end Developer at Dimatica",
-            "about.job3.description":
+            "about.dimatica.description":
                 "In this case, I worked on projects for companies that were owned by the company itself.They were CMS projects, so I was also involved in the design and functionality of the front- end.I also did some interviews and managed a team.",
-            "about.job4.title":
+            "about.ibm.title":
                 "Front Developer at IBM",
-            "about.job4.description":
+            "about.ibm.description":
                 "This time, I was involved in the design of the Banco Santander app.I also created components in Angular, giving them functionality, and reading data from the back end.",
-            "about.job5.title":
+            "about.accenture.title":
                 "Front Developer at Accenture",
-            "about.job5.description":
+            "about.accenture.description":
                 "For supplier reasons, I changed companies, but I'm still working on the same Banco Santander project, but creating reusable components in StencilJS for the rest of the project's Squads.I'm currently working on the front-end side, calculating rates, loans, leasing, and guarantees.",
 
             // Projects Section
             "projects.title": "My Projects",
-            "projects.ecommerce.title": "E-commerce Platform",
-            "projects.ecommerce.description":
-                "It's a flower shop window. While shopping in the store, you can still make purchases through other platforms like Glovo or Uber.",
-            "projects.dashboard.title": "Analytics Dashboard",
-            "projects.dashboard.description":
-                "Control panel to visualize business data with interactive charts and custom reports.",
-            "projects.fitness.title": "Fitness App",
-            "projects.fitness.description": "Mobile application for tracking workouts, nutrition and physical progress.",
-            "projects.education.title": "Educational Platform",
-            "projects.education.description": "Learning management system with courses, assessments and certifications.",
-            "projects.social.title": "Social Network",
-            "projects.social.description":
-                "Social network platform with profiles, posts, messaging and real-time notifications.",
-            "projects.weather.title": "Weather App",
-            "projects.weather.description":
-                "Weather forecast application with real-time data and interactive visualizations.",
+            "projects.subtitle": "There are some projects that cannot be shown the code for confidentiality reasons",
+            "projects.florLoto.title": "Flor de Loto",
+            "projects.florLoto.subtitle": "E-commerce Platform",
+            "projects.florLoto.description":
+                "Application created with Angular and hosted on Netlify. It's a showcase for a flower shop. In addition to the shopping cart and in-store purchases, purchases can be made through other platforms such as Glovo or Uber.",
+            "projects.eleia.title": "Eleia",
+            "projects.eleia.subtitle": "Energy Distributor",
+            "projects.eleia.description":
+                "Website created with WordPress and hosted on Azure. It is an energy distributor that offers solar panel installation and maintenance services.",
+            "projects.dimatica.title": "Dimatica",
+            "projects.dimatica.subtitle": "Technology Consulting",
+            "projects.dimatica.description":
+                "Website created with WordPress and hosted on Azure. It is a technology consultancy that offers software development and digital transformation services.",
+            "projects.api.title": "API Movilidad",
+            "projects.api.subtitle": "Infrastructure Construction",
+            "projects.api.description":
+                "Website created with WordPress and hosted on Azure. API Movilidad S.A. is a Spanish company specialized in civil engineering, focused on the construction, maintenance, and upkeep of road infrastructure and street furniture.",
             "projects.demo": "Demo",
             "projects.code": "Code",
 
@@ -138,49 +148,58 @@ const resources = {
             "about.description3":
                 "Cuando no estoy codificando, disfruto pasar tiempo con mis amigos, viajar, hacer deporte, estar con mi familia y socializar con gente nueva, actividades que me ayudan a mantener un equilibrio saludable entre el trabajo y la vida personal.",
             "about.contactMe": "Contactar",
+
             // Timeline About Section
             "about.job.actuality":
                 "Actualidad",
-            "about.job1.title":
+            "about.freelance.title":
+                "Freelance.",
+            "about.freelance.description":
+                "Este fue el comienzo de mi carrera profesional. Empecé trabajando con mi padre en su imprenta, donde me encargaba del diseño gráfico y la maquetación de los trabajos. Con el tiempo, fui adquiriendo conocimientos en desarrollo web, lo que me permitió combinar ambas disciplinas.",
+            "about.servegraf.title":
+                "Diseñador gráfico en Servegraf.",
+            "about.servegraf.description":
+                "Diseño de materiales gráficos y branding para diversos clientes. Además, me encargaba de la maquetación de los diseños para su impresión. Y por supuesto seguí aprendiendo sobre el desarrollo web.",
+            "about.everis.title":
                 "Desarrollador front-end en Eeveris.",
-            "about.job1.description":
+            "about.everis.description":
                 "Desarrollo de la tienda online de Jazztel. Me dedicaba casi al 100% en el tema del diseño y maquetación de la web, desempeñando tareas conjuntamente con la parte del desarrollo.",
-            "about.job2.title":
+            "about.nateevo.title":
                 "Desarrollador front-end en Nateevo",
-            "about.job2.description":
+            "about.nateevo.description":
                 "En esta empresa, trabajé en varios proyectos, incluyendo la tienda online del FC Barcelona, ​​la web de Almirall y proyectos para Mapfre. Me dedicaba sobre todo el la parte de maquetación y darle funcionalidad a los sitios, aún que la mayoría estban hechos con CMS.",
-            "about.job3.title":
+            "about.dimatica.title":
                 "Desarrollador front-end en Dimatica",
-            "about.job3.description":
+            "about.dimatica.description":
                 "En este caso, trabajé en proyectos para empresas que pertenecían a la propia empresas. Eran proyectos con CMS así que también estuve dedicado con el sector del diseño y funcionalidad por parte del Front-End. También me dedicaba a hacer alguna entrevista y manejar un equipo.",
-            "about.job4.title":
+            "about.ibm.title":
                 "Desarrollador front-end en IBM",
-            "about.job4.description":
+            "about.ibm.description":
                 "En esta ocasión estuve dedicado en la parte de diseño de la App del Banco Santander. También creando componentes en Angular y dándoles funcionalidad y leyendo datos de parte del Back-End",
-            "about.job5.title":
+            "about.accenture.title":
                 "Desarrollador front-end en Accenture",
-            "about.job5.description":
+            "about.accenture.description":
                 "Por motivos de proveedores, me cambié de empresa pero sigo en el mismo proyecto del Banco Santander, pero haciendo componentes reutilizables en StencilJS para el resto de Squads del proyecto. Acutalmente estoy en la parte de Front-End calculando tasas, créditos, leasing y avales",
 
             // Projects Section
             "projects.title": "Mis Proyectos",
-            "projects.ecommerce.title": "Plataforma E-commerce",
-            "projects.ecommerce.description":
-                "Es un escaparate de una tienda de flores. Pendiente del carrito de compra y compras en la propia tienda, se pueden realizar compras a través de otras plataformas como Glovo o Uber.",
-            "projects.dashboard.title": "Dashboard Analytics",
-            "projects.dashboard.description":
-                "Panel de control para visualizar datos de negocio con gráficos interactivos y reportes personalizados.",
-            "projects.fitness.title": "App de Fitness",
-            "projects.fitness.description":
-                "Aplicación móvil para seguimiento de entrenamientos, nutrición y progreso físico.",
-            "projects.education.title": "Plataforma Educativa",
-            "projects.education.description": "Sistema de gestión de aprendizaje con cursos, evaluaciones y certificaciones.",
-            "projects.social.title": "Red Social",
-            "projects.social.description":
-                "Plataforma de red social con perfiles, publicaciones, mensajería y notificaciones en tiempo real.",
-            "projects.weather.title": "Aplicación de Clima",
-            "projects.weather.description":
-                "Aplicación de pronóstico del tiempo con datos en tiempo real y visualizaciones interactivas.",
+            "projects.subtitle": "Hay algunos proyectos que no se puede mostrar el código por motivos de confidencialidad",
+            "projects.florLoto.title": "Flor de Loto",
+            "projects.florLoto.subtitle": "Plataforma E-commerce",
+            "projects.florLoto.description":
+                "Aplicación creada con Angular y alojamiento en Netlify. Es un escaparate de una tienda de flores. Pendiente del carrito de compra y compras en la propia tienda, se pueden realizar compras a través de otras plataformas como Glovo o Uber.",
+            "projects.eleia.title": "Eleia",
+            "projects.eleia.subtitle": "Destribuidora de energía",
+            "projects.eleia.description":
+                "Web creada con Wordpress y alojamiento en Azure. Es una distribuidora de energía que ofrece servicios de instalación y mantenimiento de placas solares.",
+            "projects.dimatica.title": "Dimatica",
+            "projects.dimatica.subtitle": "Consultoría tecnológica",
+            "projects.dimatica.description":
+                "Web creada con Wordpress y alojamiento en Azure. Es una consultoría tecnológica que ofrece servicios de desarrollo de software y transformación digital.",
+            "projects.api.title": "API Movilidad",
+            "projects.api.subtitle": "Construcción de infraestructuras",
+            "projects.api.description":
+                "Web creada con Wordpress y alojamiento en Azure. API Movilidad S.A. es una empresa española especializada en ingeniería civil, centrada en la construcción, conservación y mantenimiento de infraestructuras viarias y mobiliario urbano.",
             "projects.demo": "Demo",
             "projects.code": "Código",
 

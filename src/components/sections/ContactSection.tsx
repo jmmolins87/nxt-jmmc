@@ -13,6 +13,7 @@ import { Mail, Linkedin, Github } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { SectionHeading } from "@/components/custom/SectionHeading"
 import { ContactForm } from "@/components/forms/ContactForm"
+import { Button } from "../ui/button"
 
 
 export function ContactSection() {
@@ -24,39 +25,39 @@ export function ContactSection() {
                 <SectionHeading title={t("contact.title")} />
                 <div className="grid md:grid-cols-2 gap-8 items-start">
                     <div className="flex flex-col justify-around h-full space-y-4">
-                        <div className="flex flex-col justify-between md:h-1/3 gap-4">
+                        <div className="flex flex-col justify-between gap-8">
                             <h3 className="text-2xl font-semibold">{t("contact.subtitle")}</h3>
                             <p>{t("contact.description")}</p>
                         </div>
-                        <div className="space-y-2">
-                            <Link href="mailto:jmmolins87@gmail.com" className="flex items-center gap-2 hover:underline">
-                                <Mail className="h-5 w-5 text-primary" />
-                                <span>jmmolins87@gmail.com</span>
+                        <div className=" flex justify-start items-center gap-4">
+                            <Link
+                                href="https://github.com/jmmolins87"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub Profile"
+                                title="Github">
+                                <Button variant="ghost" size="icon">
+                                    <Github className="h-12 w-12" />
+                                    <span className="sr-only">GitHub</span>
+                                </Button>
                             </Link>
-                            <div className="flex items-center gap-2">
-                                <Linkedin className="h-5 w-5 text-primary" />
-                                <Link
-                                    href="https://www.linkedin.com/in/juanma-molins-cortes"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="hover:underline"
-                                    aria-label="LinkedIn Profile"
-                                >
-                                    www.linkedin.com/in/juanma-molins-cortes
-                                </Link>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Github className="h-5 w-5 text-primary" />
-                                <Link
-                                    href="https://github.com/jmmolins87"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="hover:underline"
-                                    aria-label="GitHub Profile"
-                                >
-                                    https://github.com/jmmolins87
-                                </Link>
-                            </div>
+                            <Link
+                                href="https://www.linkedin.com/in/juanma-molins-cortes"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn Profile"
+                                title="Linkdn">
+                                <Button variant="ghost" size="icon">
+                                    <Linkedin className="h-8 w-8" />
+                                    <span className="sr-only">LinkedIn</span>
+                                </Button>
+                            </Link>
+                            <Link href="mailto:jmmolins87@gmail.com" aria-label="Email Me">
+                                <Button variant="ghost" size="icon">
+                                    <Mail className="h-8 w-8" />
+                                    <span className="sr-only">Email</span>
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                     <Card>

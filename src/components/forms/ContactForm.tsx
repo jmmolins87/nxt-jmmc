@@ -115,7 +115,7 @@ export function ContactForm() {
                         <FormItem>
                             <FormLabel>{t("contact.form.message")}</FormLabel>
                             <FormControl>
-                                <Textarea placeholder={t("contact.form.messagePlaceholder")} className="min-h-[120px]" {...field} />
+                                <Textarea placeholder={t("contact.form.messagePlaceholder")} className="min-h-[150px] resize-none" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>

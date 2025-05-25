@@ -40,7 +40,7 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
                     </TabsList>
 
                     <TabsContent value="frontend" className="space-y-4">
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                             {skills.frontend.map((skill, index) => (
                                 <CircularSkillCard key={skill.name} name={skill.name} level={skill.level} delay={index * 150} />
                             ))}

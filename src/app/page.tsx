@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next"
 // Import i18n
 import "@/lib/i18n"
 
+import LoadingPage from "@/app/loading"
+
 import { AboutSection } from "@/components/sections/AboutSection"
 import { ContactSection } from "@/components/sections/ContactSection"
 import { Footer } from "@/components/layout/Footer"
@@ -14,11 +16,19 @@ import { HeroSection } from "@/components/sections/HeroSection"
 import { StructuredData } from "@/components/seo/StructuredData"
 import { ProjectsSection } from "@/components/sections/ProjectsSection"
 import { SkillsSection } from "@/components/sections/SkillsSection"
+import { ButtonToTop } from "@/components/custom/ButtonToTop"
 
 
 export default function Portfolio() {
   const { t } = useTranslation()
   const [activeSection, setActiveSection] = useState("home")
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000)
+    return () => clearTimeout(timer)
+  }, [])
 
   // Track active section on scroll
   useEffect(() => {
@@ -51,60 +61,48 @@ export default function Portfolio() {
     }
   }
 
+  if (loading) return <LoadingPage />
+
   // Sample project data
   const projects = [
     {
       id: 1,
-      title: t("projects.ecommerce.title"),
-      description: t("projects.ecommerce.description"),
-      tags: ["Angular19", "Sass", "Node.js", "Netlify"],
+      title: t("projects.florLoto.title"),
+      subtitle: t("projects.florLoto.subtitle"),
+      description: t("projects.florLoto.description"),
+      tags: ["Angular", "Sass", "Node.js", "Netlify"],
       image: "/projects/flordloto.png",
       demo: "https://flordlotosegovia.com/",
       code: "https://github.com/jmmolins87/ng-flor-loto"
     },
     {
       id: 2,
-      title: t("projects.dashboard.title"),
-      description: t("projects.dashboard.description"),
-      tags: ["React", "D3.js", "TypeScript", "Firebase"],
-      image: "/vercel.svg?height=300&width=500&text=Dashboard",
-      demo: "",
+      title: t("projects.eleia.title"),
+      subtitle: t("projects.eleia.subtitle"),
+      description: t("projects.eleia.description"),
+      tags: ["Wordpress", "PHP", "MySQL", "Azure",],
+      image: "/projects/eleia.png",
+      demo: "https://eleiaenergia.com/",
       code: ""
     },
     {
       id: 3,
-      title: t("projects.fitness.title"),
-      description: t("projects.fitness.description"),
-      tags: ["React Native", "Redux", "Node.js", "MongoDB"],
-      image: "/vercel.svg?height=300&width=500&text=Fitness+App",
-      demo: "",
+      title: t("projects.dimatica.title"),
+      subtitle: t("projects.dimatica.subtitle"),
+      description: t("projects.dimatica.description"),
+      tags: ["Wordpress", "PHP", "MySQL", "Azure"],
+      image: "/projects/dimatica.png",
+      demo: "https://www.dimaticasoftware.com/",
       code: ""
     },
     {
       id: 4,
-      title: t("projects.education.title"),
-      description: t("projects.education.description"),
-      tags: ["Vue.js", "Express", "PostgreSQL", "AWS"],
-      image: "/vercel.svg?height=300&width=500&text=Education",
-      demo: "",
-      code: ""
-    },
-    {
-      id: 5,
-      title: t("projects.social.title"),
-      description: t("projects.social.description"),
-      tags: ["React", "Socket.io", "GraphQL", "MongoDB"],
-      image: "/vercel.svg?height=300&width=500&text=Social+Network",
-      demo: "",
-      code: ""
-    },
-    {
-      id: 6,
-      title: t("projects.weather.title"),
-      description: t("projects.weather.description"),
-      tags: ["React", "OpenWeather API", "Chart.js", "Tailwind"],
-      image: "/vercel.svg?height=300&width=500&text=Weather+App",
-      demo: "",
+      title: t("projects.api.title"),
+      subtitle: t("projects.api.subtitle"),
+      description: t("projects.api.description"),
+      tags: ["Wordpress", "PHP", "MySQL", "Azure"],
+      image: "/projects/api.png",
+      demo: "https://www.apimovilidad.es/",
       code: ""
     },
   ]
@@ -113,54 +111,68 @@ export default function Portfolio() {
   const skills = {
     frontend: [
       { name: "HTML & CSS", level: 95 },
-      { name: "JavaScript", level: 90 },
-      { name: "React", level: 85 },
+      { name: "JavaScript", level: 75 },
       { name: "Angular", level: 85 },
+      { name: "React", level: 65 },
+      { name: "Vue.js", level: 45 },
       { name: "Next.js", level: 80 },
-      { name: "Tailwind CSS", level: 90 },
+      { name: "Tailwind CSS", level: 80 },
+      { name: "Bootstrap", level: 90 },
     ],
     backend: [
       { name: "Node.js", level: 75 },
-      { name: "Express", level: 80 },
-      { name: "MongoDB", level: 70 },
-      { name: "PostgreSQL", level: 65 },
-      { name: "GraphQL", level: 60 },
+      { name: "Express", level: 30 },
+      { name: "MongoDB", level: 50 },
+      { name: "PostgreSQL", level: 25 },
+      { name: "GraphQL", level: 30 },
     ],
     tools: [
       { name: "Git & GitHub", level: 85 },
-      { name: "Docker", level: 70 },
-      { name: "AWS", level: 65 },
-      { name: "Figma", level: 75 },
-      { name: "VS Code", level: 90 },
+      { name: "Docker", level: 40 },
+      { name: "AWS", level: 35 },
+      { name: "Wordpress", level: 55 },
+      { name: "Figma", level: 85 },
+      { name: "VS Code", level: 95 },
+      { name: "Adobe Creative", level: 75 },
     ],
   }
 
   // Timeline data
   const jobs = [
     {
+      date: "2012 - 2014",
+      title: t("about.freelance.title"),
+      description: t("about.freelance.description"),
+    },
+    {
+      date: "2014 - 2018",
+      title: t("about.servegraf.title"),
+      description: t("about.servegraf.description"),
+    },
+    {
       date: "2018 - 2019",
-      title: t("about.job1.title"),
-      description: t("about.job1.description"),
+      title: t("about.everis.title"),
+      description: t("about.everis.description"),
     },
     {
       date: "2019 - 2020",
-      title: t("about.job2.title"),
-      description: t("about.job2.description"),
+      title: t("about.nateevo.title"),
+      description: t("about.nateevo.description"),
     },
     {
       date: "2020 - 2021",
-      title: t("about.job3.title"),
-      description: t("about.job3.description"),
+      title: t("about.dimatica.title"),
+      description: t("about.dimatica.description"),
     },
     {
       date: "2021 - 2023",
-      title: t("about.job4.title"),
-      description: t("about.job4.description"),
+      title: t("about.ibm.title"),
+      description: t("about.ibm.description"),
     },
     {
-      date: `2023 - ${t("about.job.actuality")}`,
-      title: t("about.job5.title"),
-      description: t("about.job5.description"),
+      date: `2023 - ${t("about.accenture.title")}`,
+      title: t("about.accenture.title"),
+      description: t("about.accenture.description"),
     }
   ];
 
@@ -188,6 +200,8 @@ export default function Portfolio() {
         <SkillsSection skills={skills} />
         <ContactSection />
       </main>
+
+      <ButtonToTop />
 
       <Footer />
     </div>
