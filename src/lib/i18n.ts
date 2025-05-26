@@ -110,6 +110,22 @@ const resources = {
             "projects.jmmcLegacy.subtitle": "My old portfolio",
             "projects.jmmcLegacy.description":
                 "This is a website created years ago, using HTML, CSS3, Bootstrap, JS (jQuery), and PHP. It's a static website. On this website, you'll have the opportunity to see some of my work as a graphic designer.",
+            "projects.bsantander.title": "Banco Santander",
+            "projects.bsantander.subtitle": "Digital Banking Platform",
+            "projects.bsantander.description":
+                "In this project, I started in the Stock Exchanges and Markets department, and I also worked on the retail side. Then, I worked on creating reusable components in StencilJS. These components are used in various bank applications, improving development efficiency and consistency. These components were also displayed in a library created with Storybook, where all the developed components are displayed so that the Squads can see which components are most beneficial depending on the development they need to do. I was also involved in creating components for calculating rates, loans, leasing, and guarantees.",
+            "projects.servegraf.title": "Servegraf Printing",
+            "projects.servegraf.subtitle": "Printing E-commerce",
+            "projects.servegraf.description":
+                "This project is an online printing shop built with WordPress. It allows users to customize and order print products such as business cards, brochures, posters, magazines, books, and signage. It was one of my first web development projects, where I learned how to integrate graphic design with web functionality.",
+            "projects.pmbalaguer.title": "Balaguer Madridista Supporters Club",
+            "projects.pmbalaguer.subtitle": "Portal for the Balaguer Madridista Supporters Club",
+            "projects.pmbalaguer.description":
+                "Project created entirely in WordPress. It was created for the Balaguer Madridista Supporters Club, where you can see the latest news about the team, as well as past and upcoming matches.",
+            "projects.jmmcdev.title": "JMMC Dev",
+            "projects.jmmcdev.subtitle": "My current portfolio",
+            "projects.jmmcdev.description":
+                "This project is built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. It's a portfolio where I showcase my projects and skills as a web developer.",
             "projects.demo": "Demo",
             "projects.code": "Code",
 
@@ -255,6 +271,22 @@ const resources = {
             "projects.jmmcLegacy.subtitle": "Mi portfolio antiguo",
             "projects.jmmcLegacy.description":
                 "Es una web creada hace años, la creé con HTML, CSS3, Bootstrap, JS (jQuery) y PHP. Es una web estática. En esta Web tendrás la oportunidad de ver algunos de mis trabajos como diseñador gráfico.",
+            "projects.bsantander.title": "Banco Santander",
+            "projects.bsantander.subtitle": "Plataforma de banca digital",
+            "projects.bsantander.description":
+                "En este proyecto empecé en el apartado de Bolsas y Mercados, también estuve en la parte de particulares. Luego, trabajé en la creación de componentes reutilizables en StencilJS. Estos componentes se utilizan en diversas aplicaciones del banco, mejorando la eficiencia y consistencia del desarrollo. Así como, dichos componentes se mostraban en una librería creada con Storybook, dónde están todos los componentes desarrollados para que los Squads vean que componentes les beneficia más según el desarrllo que tengan que hacer. También estuve involucrado en la creación de componentes para el cálculo de tasas, créditos, leasing y avales.",
+                "projects.servegraf.title": "Servegraf Imprenta",
+                "projects.servegraf.subtitle": "E-commerce de imprenta",
+                "projects.servegraf.description":
+                "Este proyecto es una imprenta online creada con WordPress. Permite a los usuarios personalizar y pedir productos de impresión como tarjetas de visita, folletos, carteles, revistas, libros y cartelería. Fue uno de mis primeros proyectos de desarrollo web, donde aprendí a integrar el diseño gráfico con la funcionalidad web.",
+            "projects.pmbalaguer.title": "Peña Madridista Balaguer",
+            "projects.pmbalaguer.subtitle": "Portal para la Peña Madridista Balaguer",
+            "projects.pmbalaguer.description":
+                "Proyecto creado integramente en Wordpress. Fue creado para la Peña Madridista Balaguer, dónde se pueden ver las últimas noticias del equipo, así como los partidos que se han jugado y los próximos partidos que se jugarán.",
+            "projects.jmmcdev.title": "JMMC Dev",
+            "projects.jmmcdev.subtitle": "Mi portfolio actual",
+            "projects.jmmcdev.description":
+                "Este proyecto está creado con Next.js, TypeScript, Tailwind CSS y Framer Motion. Es un portfolio donde muestro mis proyectos y habilidades como desarrollador web.",
             "projects.demo": "Demo",
             "projects.code": "Código",
 

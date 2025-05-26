@@ -7,7 +7,7 @@
 
 import Image from "next/image"
 import { useTranslation } from "react-i18next"
-import { ExternalLink } from "lucide-react"
+import { ExternalLink, Github } from "lucide-react"
 
 import { 
     Card, 
@@ -82,7 +82,7 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
                 title={title}
                 className="flex-1">
                 <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="h-4 w-4 mr-2" />
+                  <Github className="h-12 w-12" />
                   {t("projects.code")}
                 </Button>
               </Link>

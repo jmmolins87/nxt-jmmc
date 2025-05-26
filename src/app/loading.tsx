@@ -18,6 +18,7 @@ export default function LoadingPage() {
                         <Skeleton className="h-6 w-20 rounded bg-gray-300 dark:bg-gray-600" />
                         <Skeleton className="h-6 w-20 rounded bg-gray-300 dark:bg-gray-600" />
                         <Skeleton className="h-6 w-20 rounded bg-gray-300 dark:bg-gray-600" />
+                        <Skeleton className="h-6 w-20 rounded bg-gray-300 dark:bg-gray-600" />
                     </nav>
                     <div className="hidden md:flex items-center gap-3">
                         <Skeleton className="h-6 w-8 rounded bg-gray-300 dark:bg-gray-600" />

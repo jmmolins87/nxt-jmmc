@@ -66,12 +66,32 @@ export default function Portfolio() {
   // Sample project data
   const projects = [
     {
+      id: 1,
+      title: t("projects.servegraf.title"),
+      subtitle: t("projects.servegraf.subtitle"),
+      description: t("projects.servegraf.description"),
+      tags: ["Wordpress", "PHP", "MySQL"],
+      image: "/projects/servegraf.png",
+      demo: "",
+      code: "https://github.com/jmmolins87/wp-servegraf"
+    },
+    {
+      id: 2,
+      title: t("projects.pmbalaguer.title"),
+      subtitle: t("projects.pmbalaguer.subtitle"),
+      description: t("projects.pmbalaguer.description"),
+      tags: ["Wordpress", "PHP", "MySQL"],
+      image: "/projects/pm_balaguer.png",
+      demo: "",
+      code: "https://github.com/jmmolins87/wp-pm_balaguer"
+    },
+    {
       id: 3,
       title: t("projects.jmmcLegacy.title"),
       subtitle: t("projects.jmmcLegacy.subtitle"),
       description: t("projects.jmmcLegacy.description"),
       tags: ["HTML5", "CSS3",  "jQuery", "PHP", "Bootstrap"],
-      image: "/projects/jmmclegacy.png",
+      image: "/projects/jmmc_legacy.png",
       demo: "https://jmmolins87.github.io/jmmcDesignWeb/",
       code: "https://github.com/jmmolins87/jmmcDesignWeb"
     },
@@ -80,7 +100,7 @@ export default function Portfolio() {
       title: t("projects.jazztel.title"),
       subtitle: t("projects.jazztel.subtitle"),
       description: t("projects.jazztel.description"),
-      tags: ["Angular", "TypeScript",  "Sass", "Karma", "Java", "SpringBoot", "Oracle"],
+      tags: ["Angular", "TypeScript",  "Sass", "Karma", "Java", "SpringBoot", "Oracle", "Sonar", "Jenkins"],
       image: "/projects/jazztel.png",
       demo: "https://www.jazztel.com/",
       code: ""
@@ -157,6 +177,16 @@ export default function Portfolio() {
     }, 
     {
       id: 12,
+      title: t("projects.bsantander.title"),
+      subtitle: t("projects.bsantander.subtitle"),
+      description: t("projects.bsantander.description"),
+      tags: ["Angular", "Sass", "Storybook", "StencilJs", "PHP", "Jenkins", "Docker", "AWS", "Sonar"],
+      image: "/projects/banco_santander.png",
+      demo: "https://www.bancosantander.es/particulares",
+      code: ""
+    }, 
+    {
+      id: 13,
       title: t("projects.florLoto.title"),
       subtitle: t("projects.florLoto.subtitle"),
       description: t("projects.florLoto.description"),
@@ -164,6 +194,16 @@ export default function Portfolio() {
       image: "/projects/flordloto.png",
       demo: "https://flordlotosegovia.com/",
       code: "https://github.com/jmmolins87/ng-flor-loto"
+    },
+    {
+      id: 14,
+      title: t("projects.jmmcdev.title"),
+      subtitle: t("projects.jmmcdev.subtitle"),
+      description: t("projects.jmmcdev.description"),
+      tags: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      image: "/projects/jmmcDev.png",
+      demo: "https://jmmc.vercel.app/",
+      code: "https://github.com/jmmolins87/nxt-jmmc"
     },
   ]
 
@@ -173,7 +213,9 @@ export default function Portfolio() {
       { name: "HTML & CSS", level: 95 },
       { name: "JavaScript", level: 75 },
       { name: "Angular", level: 85 },
-      { name: "React", level: 65 },
+      { name: "Storybook", level: 80 },
+      { name: "StencilJs", level: 70 },
+      { name: "React", level: 70 },
       { name: "Vue.js", level: 45 },
       { name: "Next.js", level: 80 },
       { name: "Tailwind CSS", level: 80 },
