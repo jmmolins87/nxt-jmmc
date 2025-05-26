@@ -68,9 +68,10 @@ const resources = {
 
             // Projects Section
             "projects.title": "My Projects",
-            "projects.subtitle": "There are some projects that cannot be shown the code for confidentiality reasons",
+            "projects.moreInfo1": "* There are some projects that cannot be shown the code for confidentiality reasons",
+            "projects.moreInfo2": "* In projects where the code is shown but not the site, it is because the site is deprecated, it no longer exists on the network",
             "projects.florLoto.title": "Flor de Loto",
-            "projects.florLoto.subtitle": "E-commerce Platform",
+            "projects.florLoto.subtitle": "Flower E-commerce",
             "projects.florLoto.description":
                 "Application created with Angular and hosted on Netlify. It's a showcase for a flower shop. In addition to the shopping cart and in-store purchases, purchases can be made through other platforms such as Glovo or Uber.",
             "projects.eleia.title": "Eleia",
@@ -85,6 +86,26 @@ const resources = {
             "projects.api.subtitle": "Infrastructure Construction",
             "projects.api.description":
                 "Website created with WordPress and hosted on Azure. API Movilidad S.A. is a Spanish company specialized in civil engineering, focused on the construction, maintenance, and upkeep of road infrastructure and street furniture.",
+            "projects.almirall.title": "Almirall",
+            "projects.almirall.subtitle": "Almirall, S.A. is a Spanish pharmaceutical company",
+            "projects.almirall.description":
+                "It's a pharmaceutical company built with XHTML 1.0 and CSS, following Web 2.0 design criteria that include content syndication and graphic elements that facilitate navigation. Additionally, Almirall uses web analytics tools such as Google Analytics.",
+            "projects.jazztel.title": "Jazztel",
+            "projects.jazztel.subtitle": "Telecommunications e-commerce",
+            "projects.jazztel.description":
+                "Website created with Angular, TypeScript, and Sass on the front end. Unit tests were performed with Karma. The back end was created with Java and Spring Boot. The database is Oracle, as is the content injector so the client can edit text and images.",
+            "projects.fcbarcelona.title": "FC Barcelona Store",
+            "projects.fcbarcelona.subtitle": "FC Barcelona E-commerce",
+            "projects.fcbarcelona.description":
+                "This website was created with Shopify. The main website is hosted on Amazon Web Services (AWS) and uses a specialized CMS called Ubiquo Sports.",
+            "projects.mapfre.title": "Mapfre",
+            "projects.mapfre.subtitle": "Insurance E-commerce",
+            "projects.mapfre.description": 
+                "Website created the old-fashioned way. Pure HTML5, CSS3, and jQuery. I assume it's up to date since I worked on it years ago.",
+            "projects.esmuc.title": "Escola Superior de Música de Catalunya",
+            "projects.esmuc.subtitle": "Music e-commerce and educational platform",
+            "projects.esmuc.description":
+                "Website created entirely in Wordpress.",
             "projects.demo": "Demo",
             "projects.code": "Code",
 
@@ -108,6 +129,8 @@ const resources = {
             "contact.form.send": "Send Message",
             "contact.form.sending": "Sending Message",
             "contact.form.success": "Message sent successfully!",
+            "contact.form.error": "Oops! The email was not sent",
+            "contact.form.errorDescription": "Please try again in a few minutes",
 
             // Form Validation
             "validation.nameMin": "Name must be at least 2 characters",
@@ -183,9 +206,10 @@ const resources = {
 
             // Projects Section
             "projects.title": "Mis Proyectos",
-            "projects.subtitle": "Hay algunos proyectos que no se puede mostrar el código por motivos de confidencialidad",
+            "projects.moreInfo1": "* Hay algunos proyectos que no se puede mostrar el código por motivos de confidencialidad",
+            "projects.moreInfo2": "* En los proyectos que se muestra el código pero no el sitio, es porque éste está deprecado, ya no existe en la red",
             "projects.florLoto.title": "Flor de Loto",
-            "projects.florLoto.subtitle": "Plataforma E-commerce",
+            "projects.florLoto.subtitle": "E-commerce de flores",
             "projects.florLoto.description":
                 "Aplicación creada con Angular y alojamiento en Netlify. Es un escaparate de una tienda de flores. Pendiente del carrito de compra y compras en la propia tienda, se pueden realizar compras a través de otras plataformas como Glovo o Uber.",
             "projects.eleia.title": "Eleia",
@@ -200,6 +224,26 @@ const resources = {
             "projects.api.subtitle": "Construcción de infraestructuras",
             "projects.api.description":
                 "Web creada con Wordpress y alojamiento en Azure. API Movilidad S.A. es una empresa española especializada en ingeniería civil, centrada en la construcción, conservación y mantenimiento de infraestructuras viarias y mobiliario urbano.",
+            "projects.almirall.title": "Almirall",
+            "projects.almirall.subtitle": "Almirall, S.A. es una compañía farmacéutica.",
+            "projects.almirall.description":
+                "Es una compañía farmacéutica que está construida con XHTML 1.0 y CSS, siguiendo criterios de diseño Web 2.0 que incluyen sindicación de contenidos y elementos gráficos que facilitan la navegación. Además, Almirall utiliza herramientas de análisis web como Google Analytics.",
+            "projects.jazztel.title": "Jazztel",
+            "projects.jazztel.subtitle": "E-commerce de telecomunicaciones",
+            "projects.jazztel.description":
+                "Web creada con Angular, TypeScript y Sass en la parte del Front-End. Los test unitarios se realizaron con Karma. La parte del Back-End fue creada con Java y Spring Boot. La base de datos es Oracle al igual que el inyector de contenido para que el propio cliente pueda cambiar textos e imagenes.",
+            "projects.fcbarcelona.title": "Store FC Barcelona",
+            "projects.fcbarcelona.subtitle": "E-commerce del FC Barcelona",
+            "projects.fcbarcelona.description":
+                "Esta web fue creada con Shopify. El sitio web principal está alojado en Amazon Web Services (AWS) y utiliza un CMS especializado llamado Ubiquo Sports.",
+            "projects.mapfre.title": "Mapfre",
+            "projects.mapfre.subtitle": "E-commerce de Seguros",
+            "projects.mapfre.description":
+                "Web creada a la vieja auzanza. HTML5 puro, CSS3 y jQuery, supongo que estará actualizada ya que hace años que trabajé en ella.",
+            "projects.esmuc.title": "Escola Superior de Música de Catalunya",
+            "projects.esmuc.subtitle": "E-commerce de Música y plataforma educativa",
+            "projects.esmuc.description":
+                "Web creada en Wordpress integramente.",
             "projects.demo": "Demo",
             "projects.code": "Código",
 
@@ -223,6 +267,8 @@ const resources = {
             "contact.form.send": "Enviar Mensaje",
             "contact.form.sending": "Enviando Mensaje",
             "contact.form.success": "Mensaje enviado con éxito!",
+            "contact.form.error": "¡Vaya! El correo no se ha enviado",
+            "contact.form.errorDescription": "Pruebalo de nuevo en unos minutos",
 
             // Form Validation
             "validation.nameMin": "El nombre debe tener al menos 2 caracteres",

@@ -31,7 +31,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
     return (
         <section id="projects" className="py-20 min-h-screen flex flex-col justify-center items-center">
             <div className="container mx-auto px-4 md:px-6">
-                <SectionHeading title={t("projects.title")} subtitle={t("projects.subtitle")} />
+                <SectionHeading title={t("projects.title")} />
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project) => (
                         <ProjectCard
@@ -46,6 +46,8 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                         />
                     ))}
                 </div>
+                <p className="text-sm mt-10">{t("projects.moreInfo1")}</p>
+                <p className="text-sm mt-3">{t("projects.moreInfo2")}</p>
             </div>
         </section>
     )

@@ -60,15 +60,15 @@ export function ContactForm() {
             "_JM6-N2BcvGJM05T_" 
         )
         .then(() => {
-            toast.success("El correo se ha enviado con éxito", {
+            toast.success(t("contact.form.success"), {
                 duration: 5000,
                 position: 'top-right',
-                })
+            })
             form.reset()
         })
         .catch(() => {
-            toast.error("¡Vaya! El correo no se ha enviado", {
-                description: "Pruebalo de nuevo en unos minutos",
+            toast.error(t("contact.form.error"), {
+                description: t("contact.form.errorDescription"),
                 duration: 5000,
                 position: 'top-right',
             })

@@ -65,18 +65,49 @@ export default function Portfolio() {
 
   // Sample project data
   const projects = [
+    
     {
-      id: 1,
-      title: t("projects.florLoto.title"),
-      subtitle: t("projects.florLoto.subtitle"),
-      description: t("projects.florLoto.description"),
-      tags: ["Angular", "Sass", "Node.js", "Netlify"],
-      image: "/projects/flordloto.png",
-      demo: "https://flordlotosegovia.com/",
-      code: "https://github.com/jmmolins87/ng-flor-loto"
+      id: 3,
+      title: t("projects.jazztel.title"),
+      subtitle: t("projects.jazztel.subtitle"),
+      description: t("projects.jazztel.description"),
+      tags: ["Angular", "TypeScript",  "Sass", "Karma", "Java", "SpringBoot", "Oracle"],
+      image: "/projects/jazztel.png",
+      demo: "https://www.jazztel.com/",
+      code: ""
     },
     {
-      id: 2,
+      id: 4,
+      title: t("projects.almirall.title"),
+      subtitle: t("projects.almirall.subtitle"),
+      description: t("projects.almirall.description"),
+      tags: ["Wordpress", "PHP", "MySQL", "Azure"],
+      image: "/projects/almirall.png",
+      demo: "https://www.almirall.es/",
+      code: ""
+    },
+    {
+      id: 5,
+      title: t("projects.fcbarcelona.title"),
+      subtitle: t("projects.fcbarcelona.subtitle"),
+      description: t("projects.fcbarcelona.description"),
+      tags: ["ShopiFy", "AWS", "Ubiquo Sports"],
+      image: "/projects/fcbarcelona.png",
+      demo: "https://store.fcbarcelona.com/es/collections/home-kit?ext=SHO_811&utm_source=Google&utm_medium=CPC&utm_campaign=_PER_BLM_COMPETE_SMART_SHO_Google_IMG_ES_ES&gad_source=1&gad_campaignid=18509275335&gbraid=0AAAAACWZXZ0m3w9LRiv3SahIj3Hy0e1jP&gclid=Cj0KCQjwotDBBhCQARIsAG5pinMNUu_PK0N-7rN5isEr-YGqmw_NN9iY0B7m30JdtKiUftv160D3OhQaAriEEALw_wcB",
+      code: ""
+    },
+    {
+      id: 6,
+      title: t("projects.mapfre.title"),
+      subtitle: t("projects.mapfre.subtitle"),
+      description: t("projects.mapfre.description"),
+      tags: ["HTML5", "CSS3", "jQuery", "PHP"],
+      image: "/projects/mapfre.png",
+      demo: "https://www.mapfre.es/",
+      code: ""
+    },
+    {
+      id: 7,
       title: t("projects.eleia.title"),
       subtitle: t("projects.eleia.subtitle"),
       description: t("projects.eleia.description"),
@@ -86,7 +117,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 3,
+      id: 8,
       title: t("projects.dimatica.title"),
       subtitle: t("projects.dimatica.subtitle"),
       description: t("projects.dimatica.description"),
@@ -96,7 +127,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 4,
+      id: 9,
       title: t("projects.api.title"),
       subtitle: t("projects.api.subtitle"),
       description: t("projects.api.description"),
@@ -104,6 +135,26 @@ export default function Portfolio() {
       image: "/projects/api.png",
       demo: "https://www.apimovilidad.es/",
       code: ""
+    }, 
+    {
+      id: 10,
+      title: t("projects.esmuc.title"),
+      subtitle: t("projects.esmuc.subtitle"),
+      description: t("projects.esmuc.description"),
+      tags: ["Wordpress", "PHP", "MySQL", "Azure"],
+      image: "/projects/esmuc.png",
+      demo: "https://www.esmuc.cat/",
+      code: ""
+    }, 
+    {
+      id: 11,
+      title: t("projects.florLoto.title"),
+      subtitle: t("projects.florLoto.subtitle"),
+      description: t("projects.florLoto.description"),
+      tags: ["Angular", "Sass", "Node.js", "Netlify"],
+      image: "/projects/flordloto.png",
+      demo: "https://flordlotosegovia.com/",
+      code: "https://github.com/jmmolins87/ng-flor-loto"
     },
   ]
 
@@ -120,9 +171,9 @@ export default function Portfolio() {
       { name: "Bootstrap", level: 90 },
     ],
     backend: [
-      { name: "Node.js", level: 75 },
+      { name: "Node.js", level: 35 },
       { name: "Express", level: 30 },
-      { name: "MongoDB", level: 50 },
+      { name: "MongoDB", level: 40 },
       { name: "PostgreSQL", level: 25 },
       { name: "GraphQL", level: 30 },
     ],
