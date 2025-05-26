@@ -86,6 +86,7 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
           <NavLink
             icon={<Briefcase className="h-4 w-4 mr-1" />}
             active={activeSection === "projects"}
+
             onClick={() => scrollToSection("projects")}
           >
             {t("nav.projects")}

@@ -33,7 +33,7 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
   const { t } = useTranslation()
 
   return (
-    <Card className="overflow-hidden group h-full flex flex-col">
+    <Card className="overflow-hidden group h-full flex flex-col hover:shadow-lg hover:shadow-gray-300 dark:shadow-zinc-950  transition-all">
       <div className="relative aspect-video overflow-hidden">
         <Image
           src={imageUrl || "/vercel.svg"}
@@ -44,7 +44,7 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
           className="object-cover transition-transform group-hover:scale-105"
         />
       </div>
-      <CardContent className="p-4 pt-0 flex-grow">
+      <CardContent className="flex flex-col justify-between p-4 pt-0 flex-grow">
         <h2 className="text-2xl font-semibold mb-2">{title}</h2>
         <h3 className="text-lg font-semibold mb-2">{subtitle}</h3>
         <p className="text-sm text-muted-foreground mb-4">{description}</p>
@@ -57,16 +57,22 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
         </div>
       </CardContent>
       <CardFooter className="p-4 pt-0 flex gap-2">
-        <Link 
-          href={demo} 
-          target="_blank" 
-          title={title}
-          className="flex-1">
-          <Button variant="outline" size="sm" className="w-full">
-            <ExternalLink className="h-4 w-4 mr-2" />
-            {t("projects.demo")}
-          </Button>
-        </Link>
+        {
+          demo ? (
+            <Link 
+              href={demo} 
+              target="_blank" 
+              title={title}
+              className="flex-1">
+              <Button variant="outline" size="sm" className="w-full">
+                <ExternalLink className="h-4 w-4 mr-2" />
+                {t("projects.demo")}
+              </Button>
+            </Link>
+          )
+          : 
+          ("")
+        }
         {
           code 
             ? (

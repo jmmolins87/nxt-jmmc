@@ -65,9 +65,18 @@ export default function Portfolio() {
 
   // Sample project data
   const projects = [
-    
     {
       id: 3,
+      title: t("projects.jmmcLegacy.title"),
+      subtitle: t("projects.jmmcLegacy.subtitle"),
+      description: t("projects.jmmcLegacy.description"),
+      tags: ["HTML5", "CSS3",  "jQuery", "PHP", "Bootstrap"],
+      image: "/projects/jmmclegacy.png",
+      demo: "https://jmmolins87.github.io/jmmcDesignWeb/",
+      code: "https://github.com/jmmolins87/jmmcDesignWeb"
+    },
+    {
+      id: 4,
       title: t("projects.jazztel.title"),
       subtitle: t("projects.jazztel.subtitle"),
       description: t("projects.jazztel.description"),
@@ -77,7 +86,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 4,
+      id: 5,
       title: t("projects.almirall.title"),
       subtitle: t("projects.almirall.subtitle"),
       description: t("projects.almirall.description"),
@@ -87,7 +96,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 5,
+      id: 6,
       title: t("projects.fcbarcelona.title"),
       subtitle: t("projects.fcbarcelona.subtitle"),
       description: t("projects.fcbarcelona.description"),
@@ -97,7 +106,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 6,
+      id: 7,
       title: t("projects.mapfre.title"),
       subtitle: t("projects.mapfre.subtitle"),
       description: t("projects.mapfre.description"),
@@ -107,7 +116,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 7,
+      id: 8,
       title: t("projects.eleia.title"),
       subtitle: t("projects.eleia.subtitle"),
       description: t("projects.eleia.description"),
@@ -117,7 +126,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 8,
+      id: 9,
       title: t("projects.dimatica.title"),
       subtitle: t("projects.dimatica.subtitle"),
       description: t("projects.dimatica.description"),
@@ -127,7 +136,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 9,
+      id: 10,
       title: t("projects.api.title"),
       subtitle: t("projects.api.subtitle"),
       description: t("projects.api.description"),
@@ -137,7 +146,7 @@ export default function Portfolio() {
       code: ""
     }, 
     {
-      id: 10,
+      id: 11,
       title: t("projects.esmuc.title"),
       subtitle: t("projects.esmuc.subtitle"),
       description: t("projects.esmuc.description"),
@@ -147,7 +156,7 @@ export default function Portfolio() {
       code: ""
     }, 
     {
-      id: 11,
+      id: 12,
       title: t("projects.florLoto.title"),
       subtitle: t("projects.florLoto.subtitle"),
       description: t("projects.florLoto.description"),

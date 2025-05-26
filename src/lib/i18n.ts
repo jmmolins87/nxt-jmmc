@@ -102,10 +102,14 @@ const resources = {
             "projects.mapfre.subtitle": "Insurance E-commerce",
             "projects.mapfre.description": 
                 "Website created the old-fashioned way. Pure HTML5, CSS3, and jQuery. I assume it's up to date since I worked on it years ago.",
-            "projects.esmuc.title": "Escola Superior de Música de Catalunya",
-            "projects.esmuc.subtitle": "Music e-commerce and educational platform",
+            "projects.esmuc.title": "ESMUC",
+            "projects.esmuc.subtitle": "E-commerce and educational platform",
             "projects.esmuc.description":
-                "Website created entirely in Wordpress.",
+                "Website created entirely in WordPress. It has a membership for the school's students and a platform where they can purchase courses, both in person and online.",
+            "projects.jmmcLegacy.title": "JMMC Legacy",
+            "projects.jmmcLegacy.subtitle": "My old portfolio",
+            "projects.jmmcLegacy.description":
+                "This is a website created years ago, using HTML, CSS3, Bootstrap, JS (jQuery), and PHP. It's a static website. On this website, you'll have the opportunity to see some of my work as a graphic designer.",
             "projects.demo": "Demo",
             "projects.code": "Code",
 
@@ -142,6 +146,9 @@ const resources = {
 
             // Theme
             "theme.toggle": "Toggle theme",
+            "theme.dark": "Dark",
+            "theme.light": "Light",
+            "theme.system": "System",
         },
     },
     es: {
@@ -240,10 +247,14 @@ const resources = {
             "projects.mapfre.subtitle": "E-commerce de Seguros",
             "projects.mapfre.description":
                 "Web creada a la vieja auzanza. HTML5 puro, CSS3 y jQuery, supongo que estará actualizada ya que hace años que trabajé en ella.",
-            "projects.esmuc.title": "Escola Superior de Música de Catalunya",
-            "projects.esmuc.subtitle": "E-commerce de Música y plataforma educativa",
+            "projects.esmuc.title": "ESMUC",
+            "projects.esmuc.subtitle": "E-commerce y plataforma educativa",
             "projects.esmuc.description":
-                "Web creada en Wordpress integramente.",
+                "Web creada en Wordpress integramente. Tiene una membresía para los alumnos de la escuela y una plataforma dónde se pueden comprar estudios, tanto presenciales como on-line",
+            "projects.jmmcLegacy.title": "JMMC Legacy",
+            "projects.jmmcLegacy.subtitle": "Mi portfolio antiguo",
+            "projects.jmmcLegacy.description":
+                "Es una web creada hace años, la creé con HTML, CSS3, Bootstrap, JS (jQuery) y PHP. Es una web estática. En esta Web tendrás la oportunidad de ver algunos de mis trabajos como diseñador gráfico.",
             "projects.demo": "Demo",
             "projects.code": "Código",
 
@@ -280,6 +291,9 @@ const resources = {
 
             // Theme
             "theme.toggle": "Cambiar tema",
+            "theme.dark": "Oscuro",
+            "theme.light": "Claro",
+            "theme.system": "Sistema",
         },
     },
 }

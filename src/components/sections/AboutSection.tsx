@@ -24,6 +24,7 @@ type JobsProps = {
 
 
 export function AboutSection({ scrollToSection, jobs }: AboutSectionProps) {
+
     const { t } = useTranslation()
 
     return (

@@ -61,7 +61,7 @@ export function ContactSection() {
                         </div>
                     </div>
                     <Card>
-                        <CardContent className="p-6">
+                        <CardContent className="shadow-lg shadow-gray-300 rounded-xl dark:shadow-zinc-950 p-6">
                             <ContactForm />
                         </CardContent>
                     </Card>
