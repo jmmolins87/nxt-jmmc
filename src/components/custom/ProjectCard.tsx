@@ -64,7 +64,7 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
               target="_blank" 
               title={title}
               className="flex-1">
-              <Button variant="outline" size="sm" className="w-full">
+              <Button variant="outline" size="sm" className="w-full shadow-md">
                 <ExternalLink className="h-4 w-4 mr-2" />
                 {t("projects.demo")}
               </Button>
@@ -81,7 +81,7 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
                 target="_blank"
                 title={title}
                 className="flex-1">
-                <Button variant="outline" size="sm" className="w-full">
+                <Button variant="outline" size="sm" className="w-full shadow-md">
                   <Github className="h-12 w-12" />
                   {t("projects.code")}
                 </Button>

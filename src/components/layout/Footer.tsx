@@ -17,7 +17,7 @@ export function Footer() {
     const { t } = useTranslation()
 
     return (
-        <footer className="py-6 border-t">
+        <footer className="py-6 border-t bg-background/25 backdrop-blur-sm">
             <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
                 <p className="text-sm text-muted-foreground">
                     © {new Date().getFullYear()} Juanma MC. {t("footer.rights")}

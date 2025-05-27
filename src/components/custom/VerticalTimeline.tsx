@@ -63,7 +63,7 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ items }) => {
                             </span>
                             {/* Contenido */}
                             <div className={`md:ml-8 w-full ${idx % 2 === 0 ? "text-left" : "text-right"}`}>
-                                <div className="text-gray-300 font-bold text-sm dark:text-gray-600">{item.date}</div>
+                                <div className="text-gray-400 font-bold text-sm dark:text-gray-500">{item.date}</div>
                                 <div className="text-lg font-semibold">{item.title}</div>
                                 {item.description && (
                                     <div className="text-gray-500 dark:text-gray-400">{item.description}</div>

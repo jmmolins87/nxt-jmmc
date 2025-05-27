@@ -4,6 +4,7 @@
 
 import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
+import LanguageDetector from "i18next-browser-languagedetector"
 
 const resources = {
     en: {
@@ -169,6 +170,9 @@ const resources = {
             "theme.dark": "Dark",
             "theme.light": "Light",
             "theme.system": "System",
+
+            //Metadata
+            "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences."
         },
     },
     es: {
@@ -334,11 +338,17 @@ const resources = {
             "theme.dark": "Oscuro",
             "theme.light": "Claro",
             "theme.system": "Sistema",
+
+            //Metadata
+            "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales."
         },
     },
 }
 
-i18n.use(initReactI18next).init({
+i18n
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
     resources,
     lng: "es", // default language
     fallbackLng: "en",

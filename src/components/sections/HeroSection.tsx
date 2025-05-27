@@ -36,11 +36,9 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
                         </h1>
                         <p className="text-xl md:text-2xl text-muted-foreground">{t("hero.role")}</p>
                         <p className="text-muted-foreground max-w-[600px]">{t("hero.description")}</p>
-                        <div className="flex flex-wrap gap-4">
-                            <Button onClick={() => scrollToSection("projects")}>{t("hero.viewProjects")}</Button>
-                            <Button variant="outline" onClick={() => scrollToSection("contact")}>
-                                {t("hero.contact")}
-                            </Button>
+                        <div className="flex justify-start items-center flex-wrap gap-4">
+                            <Button onClick={() => scrollToSection("projects")} className="h-[42px]">{t("hero.viewProjects")}</Button>
+                            <Button variant="secondary" onClick={() => scrollToSection("contact")} className="h-[42px]">{t("hero.contact")}</Button>
                         </div>
                         <div className="flex gap-6">
                             <Link 
@@ -74,7 +72,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center md:justify-end">
-                        <Avatar className="w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full border-4 border-primary/20">
+                        <Avatar className="w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full border-4 border-primary/20 bg-background/10 backdrop-blur-sm">
                             <AvatarImage
                                 src="/imgs/me.png"
                                 alt="Juanma - Web Developer and Designer"

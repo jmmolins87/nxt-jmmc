@@ -293,14 +293,13 @@ export default function Portfolio() {
       <StructuredData
         name="Juanma MC"
         jobTitle="Web Developer & Designer"
-        description="Professional web developer and designer specializing in creating attractive and functional digital experiences."
+        description={t("meta.description")}
         image="https://yourwebsite.com/profile-image.jpg"
         sameAs={[
-          "https://github.com/yourusername",
-          "https://linkedin.com/in/yourusername",
-          "https://twitter.com/yourusername",
+          "https://jmmolins87.github.io/jmmcDesignWeb/",
+          "https://www.linkedin.com/in/juanma-molins-cortes/"
         ]}
-        url="https://yourwebsite.com"
+        url="https://jmmc.com"
       />
 
       <Header activeSection={activeSection} scrollToSection={scrollToSection} />
