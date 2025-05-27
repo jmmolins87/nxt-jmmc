@@ -82,6 +82,10 @@ const resources = {
             "projects.dimatica.subtitle": "Technology Consulting",
             "projects.dimatica.description":
                 "Website created with WordPress and hosted on Azure. It is a technology consultancy that offers software development and digital transformation services.",
+            "projects.sermicro.title": "Sermicro",
+            "projects.sermicro.subtitle": "Technology Consulting",
+            "projects.sermicro.description":
+                    "Website created with Wordpress, Microsoft .NET, Java, PHP, Angular, and CMS. Additionally, the site has an employee portal accessible from a subpath (/PORTAL/loginEmpresa.jsp). Technologies such as Java and JSP are used for internal management.",
             "projects.api.title": "API Movilidad",
             "projects.api.subtitle": "Infrastructure Construction",
             "projects.api.description":
@@ -243,6 +247,10 @@ const resources = {
             "projects.dimatica.subtitle": "Consultoría tecnológica",
             "projects.dimatica.description":
                 "Web creada con Wordpress y alojamiento en Azure. Es una consultoría tecnológica que ofrece servicios de desarrollo de software y transformación digital.",
+            "projects.sermicro.title": "Sermicro",
+            "projects.sermicro.subtitle": "Consultoría Tecnológica",
+            "projects.sermicro.description":
+                "Web creada con Wordpress, Microsoft .NET, Java, PHP, Angular y CMS. Además, el sitio cuenta con un portal del empleado accesible desde una subruta (/PORTAL/loginEmpresa.jsp) se usa tecnologías como Java y JSP para la gestión interna.",
             "projects.api.title": "API Movilidad",
             "projects.api.subtitle": "Construcción de infraestructuras",
             "projects.api.description":
@@ -250,7 +258,7 @@ const resources = {
             "projects.almirall.title": "Almirall",
             "projects.almirall.subtitle": "Almirall, S.A. es una compañía farmacéutica.",
             "projects.almirall.description":
-                "Es una compañía farmacéutica que está construida con XHTML 1.0 y CSS, siguiendo criterios de diseño Web 2.0 que incluyen sindicación de contenidos y elementos gráficos que facilitan la navegación. Además, Almirall utiliza herramientas de análisis web como Google Analytics.",
+                "Es una web que está construida con XHTML 1.0 y CSS, siguiendo criterios de diseño Web 2.0 que incluyen sindicación de contenidos y elementos gráficos que facilitan la navegación. Además, Almirall utiliza herramientas de análisis web como Google Analytics.",
             "projects.jazztel.title": "Jazztel",
             "projects.jazztel.subtitle": "E-commerce de telecomunicaciones",
             "projects.jazztel.description":
