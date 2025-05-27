@@ -31,11 +31,11 @@ export function AboutSection({ scrollToSection, jobs }: AboutSectionProps) {
         <section id="about" className="py-20 bg-muted/50 min-h-screen flex flex-col justify-center items-center">
             <div className="container mx-auto px-4 md:px-6">
                 <SectionHeading title={t("about.title")} />
-                <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center">
+                <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-stretch">
                     <div
                         className="
                             w-full
-                            max-h-[400px] md:max-h-[600px] lg:max-h-[700px]
+                            h-full
                             overflow-y-auto
                             scrollbar-thin scrollbar-thumb-muted-foreground/30
                             pr-2
@@ -44,7 +44,7 @@ export function AboutSection({ scrollToSection, jobs }: AboutSectionProps) {
                         <VerticalTimeline items={jobs} />
                     </div>
                     <Separator className="block md:hidden" />
-                    <div className="space-y-4">
+                    <div className="space-y-4 h-full flex flex-col justify-center">
                         <p className="text-lg">{t("about.description1")}</p>
                         <p>{t("about.description2")}</p>
                         <p>{t("about.description3")}</p>
