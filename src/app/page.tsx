@@ -17,6 +17,7 @@ import { StructuredData } from "@/components/seo/StructuredData"
 import { ProjectsSection } from "@/components/sections/ProjectsSection"
 import { SkillsSection } from "@/components/sections/SkillsSection"
 import { ButtonToTop } from "@/components/custom/ButtonToTop"
+import DownloadButton from "@/components/custom/DownloadButton"
 
 
 export default function Portfolio() {
@@ -313,6 +314,7 @@ export default function Portfolio() {
       </main>
 
       <ButtonToTop />
+      <DownloadButton />
 
       <Footer />
     </div>

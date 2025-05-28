@@ -172,7 +172,10 @@ const resources = {
             "theme.system": "System",
 
             //Metadata
-            "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences."
+            "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
+
+            // Downladin Button
+            "download.button": "Downloading",
         },
     },
     es: {
@@ -340,7 +343,10 @@ const resources = {
             "theme.system": "Sistema",
 
             //Metadata
-            "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales."
+            "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
+
+            // Downladin Button
+            "download.button": "Descargando",
         },
     },
 }
