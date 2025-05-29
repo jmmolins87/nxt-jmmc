@@ -6,7 +6,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Toaster } from "@/components/ui/sonner"
 import Background from "@/components/custom/Background"
-
+import { DynamicFavicon } from "@/components/custom/DynamicFavicon"
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
   description:
     "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
   keywords: ["web developer", "frontend developer", "designer", "portfolio", "angular", "adobe", "react", "next.js", "javascript"],
-  authors: [{ name: "Juanma MC", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Juanma MC", url: "https://jmmc.vercel.app" }],
   creator: "Juanma MC",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourwebsite.com",
+    url: "https://jmmc.vercel.app",
     title: "Juanma MC | Web Developer & Designer Portfolio",
     description:
       "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Juanma MC | Web Developer & Designer Portfolio",
     description:
       "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
-    creator: "@yourusername",
+    creator: "@Juanma MC",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -58,25 +58,24 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
+    icon: "/favicon_light.ico",
+    shortcut: "/favicon_light.ico",
     apple: "/apple-touch-icon.png",
   },
-  // manifest: "/site.webmanifest",
-  metadataBase: new URL("https://yourwebsite.com"),
+  manifest: "/site.webmanifest",
+  metadataBase: new URL("https://jmmc.vercel.app"),
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+
+  // const { t } = useTranslation()
 
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Background />
+          <DynamicFavicon />
           {children}
         </ThemeProvider>
         <Toaster richColors />

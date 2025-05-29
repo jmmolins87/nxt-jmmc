@@ -42,8 +42,8 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ items }) => {
     }, [items.length]);
 
     return (
-        <div className="relative flex flex-col items-center py-8 pr-0 overflow-visible md:overflow-y-auto md:pr-7 md:max-h-[calc(100vh-300px)] lg:max-h-[calc(100vh-200px)] 2xl:max-h-[calc(100vh-500px)]">
-            <div className="relative w-full max-w-xl">
+        <div className="relative flex flex-col items-center py-8 pr-0 overflow-visible md:overflow-y-auto sm:max-h-[calc(100vh-400px)] md:max-h-[calc(100vh-0px)] lg:max-h-[calc(100vh-200px)] xl:h-full">
+            <div className="relative w-full md:pr-3">
                 {/* Línea vertical */}
                 <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-200 transition-all duration-1000 dark:bg-gray-700" aria-hidden="true" />
                 <ul className="w-full space-y-12">

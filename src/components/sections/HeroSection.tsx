@@ -79,7 +79,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
                                 title="Juanma - Web Developer and Designer"
                                 className="object-cover"
                             />
-                            <AvatarFallback className="text-6xl">Juanma MC</AvatarFallback>
+                            <AvatarFallback className="text-6xl text-center">Juanma MC</AvatarFallback>
                         </Avatar>
                     </div>
                 </div>

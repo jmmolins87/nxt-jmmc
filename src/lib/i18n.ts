@@ -173,6 +173,7 @@ const resources = {
 
             //Metadata
             "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
+            "meta.title": "Juanma MC | Web Developer & Designer UI/UX",
 
             // Downladin Button
             "download.button": "Downloading",
@@ -344,6 +345,7 @@ const resources = {
 
             //Metadata
             "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
+            "meta.title": "Juanma MC | Desarrollaodr Web y Diseñador UI/UX",
 
             // Downladin Button
             "download.button": "Descargando",
