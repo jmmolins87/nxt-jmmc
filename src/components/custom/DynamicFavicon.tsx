@@ -18,7 +18,7 @@ export function DynamicFavicon() {
       ...document.querySelectorAll("link[rel='shortcut icon']")
     ];
     const faviconUrl =
-      resolvedTheme === "dark" ? "/favicon-dark.ico" : "/favicon-light.ico";
+      resolvedTheme === "dark" ? "/favicon_dark.ico" : "/favicon_light.ico";
     faviconLinks.forEach(link => link.setAttribute("href", faviconUrl));
   }, [resolvedTheme]);
 
