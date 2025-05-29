@@ -5,7 +5,7 @@
 import { useEffect } from "react";
 
 
-export default function SlidingTitle({ text }: { text: string }) {
+export function SlidingTitle({ text }: { text: string }) {
 
     useEffect(() => {
         let pos = 0;

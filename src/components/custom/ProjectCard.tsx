@@ -10,10 +10,11 @@ import { useTranslation } from "react-i18next"
 import { ExternalLink, Github } from "lucide-react"
 
 import { 
-    Card, 
-    CardContent, 
-    CardFooter 
+  Card, 
+  CardContent, 
+  CardFooter 
 } from "@/components/ui/card"
+import "@/lib/i18n.client"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"

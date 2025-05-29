@@ -5,35 +5,13 @@ import "./globals.css"
 
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Toaster } from "@/components/ui/sonner"
-import Background from "@/components/custom/Background"
+import { Background } from "@/components/custom/Background"
 import { DynamicFavicon } from "@/components/custom/DynamicFavicon"
-import SlidingTitle from "@/components/custom/SlidingTitle"
+import { SlidingTitle } from "@/components/custom/SlidingTitle"
 
 import { getMetadataTranslation } from "@/lib/i18n";
 
-// async function getTranslation(lang: string, key: string, defaultValue: string) {
-//   const translations: Record<string, Record<string, string>> = {
-//     es: {
-//       "meta.title": " - Juanma MC | Desarrollador Web & Diseñador UI/UX",
-//       "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
-//       "meta.siteName": "Portfolio de Juanma MC",
-//       "meta.ogAlt": "Portfolio de Juanma MC",
-//       "meta.twitterTitle": "Juanma MC | Desarrollador Web & Diseñador UI/UX",
-//       "meta.twitterDescription": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
-//     },
-//     en: {
-//       "meta.title": " - Juanma MC | Web Developer & UI/UX Designer",
-//       "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
-//       "meta.siteName": "Juanma MC Portfolio",
-//       "meta.ogAlt": "Juanma MC Portfolio",
-//       "meta.twitterTitle": "Juanma MC | Web Developer & UI/UX Designer",
-//       "meta.twitterDescription": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
-//     },
-//   };
-//   return translations[lang]?.[key] || defaultValue;
-// }
 
-// Next.js App Router: usa generateMetadata para metadatos dinámicos y traducidos
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const lang = params?.locale || "en";
   return {

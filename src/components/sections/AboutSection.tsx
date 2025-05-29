@@ -7,6 +7,7 @@
 
 import { useTranslation } from "react-i18next"
 
+import "@/lib/i18n.client";
 import { Button } from "@/components/ui/button"
 import { SectionHeading } from "@/components/custom/SectionHeading"
 import VerticalTimeline from "@/components/custom/VerticalTimeline"

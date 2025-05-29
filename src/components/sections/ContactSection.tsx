@@ -10,6 +10,7 @@ import Link from "next/link"
 import { useTranslation } from "react-i18next"
 import { Mail, Linkedin, Github } from "lucide-react"
 
+import "@/lib/i18n.client"
 import { Card, CardContent } from "@/components/ui/card"
 import { SectionHeading } from "@/components/custom/SectionHeading"
 import { ContactForm } from "@/components/forms/ContactForm"

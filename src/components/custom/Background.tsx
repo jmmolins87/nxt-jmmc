@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import "@/lib/i18n.client";
 
-export default function DynamicBackground() {
+export function Background() {
     const { theme, systemTheme } = useTheme()
     const [isDark, setIsDark] = useState(true)
 

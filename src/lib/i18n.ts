@@ -2,11 +2,10 @@
 
 
 
-import i18n from "i18next"
-import { initReactI18next } from "react-i18next"
-import LanguageDetector from "i18next-browser-languagedetector"
+import i18n from "i18next";
 
-const resources: Record<string, { translation: Record<string, string> }> = {
+
+export const resources: Record<string, { translation: Record<string, string> }> = {
     en: {
         translation: {
             // Navigation
@@ -361,21 +360,8 @@ const resources: Record<string, { translation: Record<string, string> }> = {
     },
 }
 
-i18n
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-    resources,
-    lng: "es", // default language
-    fallbackLng: "en",
-    interpolation: {
-        escapeValue: false,
-    },
-})
-
 export function getMetadataTranslation(lang: string, key: string, defaultValue: string) {
-    // Si el idioma no existe, usa fallbackLng
-    const lng = resources[lang] ? lang : "en";
+    const lng = resources[lang] ? lang : "es";
     return resources[lng]?.translation?.[key] || defaultValue;
 }
 

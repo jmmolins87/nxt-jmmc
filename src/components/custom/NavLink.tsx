@@ -5,6 +5,8 @@
 
 import type React from "react"
 
+import "@/lib/i18n.client"
+
 interface NavLinkProps {
     children: React.ReactNode
     active: boolean

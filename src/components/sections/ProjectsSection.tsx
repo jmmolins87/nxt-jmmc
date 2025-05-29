@@ -5,6 +5,7 @@
 
 import { useTranslation } from "react-i18next"
 
+import "@/lib/i18n.client"
 import { ProjectCard } from "@/components/custom/ProjectCard"
 import { SectionHeading } from "@/components/custom/SectionHeading"
 

@@ -7,6 +7,7 @@
 
 import { useTranslation } from "react-i18next"
 
+import "@/lib/i18n.client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CircularSkillCard } from "@/components/custom/CircularSkillsCard"
 import { SectionHeading } from "@/components/custom/SectionHeading"

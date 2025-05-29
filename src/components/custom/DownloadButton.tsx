@@ -5,10 +5,12 @@ import { useState } from "react";
 
 import { useTranslation } from "react-i18next"
 
+import "@/lib/i18n.client";
+
 const FILE_URL = "/files/cv-Juanma_MC.pdf";
 const FILE_NAME = "cv-Juanma_MC.pdf";
 
-export default function DownloadButton() {
+export function DownloadButton() {
 
     const { t } = useTranslation()
 

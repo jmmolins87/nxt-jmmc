@@ -4,6 +4,7 @@
 "use client"
 
 import Link from "next/link"
+import "@/lib/i18n.client";
 import { useTranslation } from "react-i18next"
 import { 
     Github, 
