@@ -152,16 +152,6 @@ export default function Portfolio() {
     },
     {
       id: 9,
-      title: t("projects.dimatica.title"),
-      subtitle: t("projects.dimatica.subtitle"),
-      description: t("projects.dimatica.description"),
-      tags: ["Wordpress", "PHP", "MySQL", "Azure"],
-      image: "/projects/dimatica.png",
-      demo: "https://www.dimaticasoftware.com/",
-      code: ""
-    },
-    {
-      id: 10,
       title: t("projects.sermicro.title"),
       subtitle: t("projects.sermicro.subtitle"),
       description: t("projects.sermicro.description"),
@@ -171,7 +161,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 11,
+      id: 10,
       title: t("projects.dimatica.title"),
       subtitle: t("projects.dimatica.subtitle"),
       description: t("projects.dimatica.description"),
@@ -181,7 +171,7 @@ export default function Portfolio() {
       code: ""
     },
     {
-      id: 12,
+      id: 11,
       title: t("projects.api.title"),
       subtitle: t("projects.api.subtitle"),
       description: t("projects.api.description"),
@@ -191,7 +181,7 @@ export default function Portfolio() {
       code: ""
     }, 
     {
-      id: 13,
+      id: 12,
       title: t("projects.esmuc.title"),
       subtitle: t("projects.esmuc.subtitle"),
       description: t("projects.esmuc.description"),
@@ -201,7 +191,7 @@ export default function Portfolio() {
       code: ""
     }, 
     {
-      id: 14,
+      id: 13,
       title: t("projects.bsantander.title"),
       subtitle: t("projects.bsantander.subtitle"),
       description: t("projects.bsantander.description"),
@@ -211,7 +201,7 @@ export default function Portfolio() {
       code: ""
     }, 
     {
-      id: 15,
+      id: 14,
       title: t("projects.florLoto.title"),
       subtitle: t("projects.florLoto.subtitle"),
       description: t("projects.florLoto.description"),
@@ -221,7 +211,7 @@ export default function Portfolio() {
       code: "https://github.com/jmmolins87/ng-flor-loto"
     },
     {
-      id: 16,
+      id: 15,
       title: t("projects.jmmcdev.title"),
       subtitle: t("projects.jmmcdev.subtitle"),
       description: t("projects.jmmcdev.description"),
