@@ -158,12 +158,21 @@ export default function Portfolio() {
     },
     {
       id: 10,
+<<<<<<< Updated upstream
       title: t("projects.sermicro.title"),
       subtitle: t("projects.sermicro.subtitle"),
       description: t("projects.sermicro.description"),
       tags: ["Wordpress", "PHP", "MySQL", "Azure"],
       image: "/projects/sermicro.png",
       demo: "https://gruposermicro.com/",
+=======
+      title: t("projects.dimatica.title"),
+      subtitle: t("projects.dimatica.subtitle"),
+      description: t("projects.dimatica.description"),
+      tags: ["Wordpress", "PHP", "MySQL", "Azure"],
+      image: "/projects/dimatica.png",
+      demo: "https://www.dimaticasoftware.com/",
+>>>>>>> Stashed changes
       code: ""
     },
     {
@@ -188,6 +197,7 @@ export default function Portfolio() {
     }, 
     {
       id: 13,
+<<<<<<< Updated upstream
       title: t("projects.bsantander.title"),
       subtitle: t("projects.bsantander.subtitle"),
       description: t("projects.bsantander.description"),
@@ -198,6 +208,8 @@ export default function Portfolio() {
     }, 
     {
       id: 14,
+=======
+>>>>>>> Stashed changes
       title: t("projects.florLoto.title"),
       subtitle: t("projects.florLoto.subtitle"),
       description: t("projects.florLoto.description"),
