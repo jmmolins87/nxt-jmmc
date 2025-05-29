@@ -6,7 +6,7 @@ import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
 import LanguageDetector from "i18next-browser-languagedetector"
 
-const resources = {
+const resources: Record<string, { translation: Record<string, string> }> = {
     en: {
         translation: {
             // Navigation
@@ -172,8 +172,12 @@ const resources = {
             "theme.system": "System",
 
             //Metadata
+            "meta.title": "Juanma MC | Web Developer & Designer Portfolio",
             "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
-            "meta.title": "Juanma MC | Web Developer & Designer UI/UX",
+            "meta.siteName": "Juanma MC Portfolio",
+            "meta.ogAlt": "Juanma MC Portfolio",
+            "meta.twitterTitle": "Juanma MC | Web Developer & Designer Portfolio",
+            "meta.twitterDescription": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
 
             // Downladin Button
             "download.button": "Downloading",
@@ -344,8 +348,12 @@ const resources = {
             "theme.system": "Sistema",
 
             //Metadata
+            "meta.title": "Juanma MC | Desarrollador Web & Portfolio",
             "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
-            "meta.title": "Juanma MC | Desarrollaodr Web y Diseñador UI/UX",
+            "meta.siteName": "Portfolio de Juanma MC",
+            "meta.ogAlt": "Portfolio de Juanma MC",
+            "meta.twitterTitle": "Juanma MC | Desarrollador Web & Portfolio",
+            "meta.twitterDescription": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
 
             // Downladin Button
             "download.button": "Descargando",
@@ -364,5 +372,11 @@ i18n
         escapeValue: false,
     },
 })
+
+export function getMetadataTranslation(lang: string, key: string, defaultValue: string) {
+    // Si el idioma no existe, usa fallbackLng
+    const lng = resources[lang] ? lang : "en";
+    return resources[lng]?.translation?.[key] || defaultValue;
+}
 
 export default i18n
