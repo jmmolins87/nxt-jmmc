@@ -236,7 +236,10 @@ export default function Portfolio() {
   const skills = {
     frontend: [
       { name: "HTML & CSS", level: 95 },
+      { name: "Pug", level: 45 },
+      { name: "Sass", level: 85 },
       { name: "JavaScript", level: 75 },
+      { name: "Gulp", level: 35 },
       { name: "Angular", level: 85 },
       { name: "Storybook", level: 80 },
       { name: "StencilJs", level: 70 },
