@@ -175,11 +175,11 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "theme.system": "System",
 
             //Metadata
-            "meta.title": "Juanma MC | Web Developer & Designer Portfolio",
+            "meta.title": "Juanma MC | Web Developer & Designer UI/UX",
             "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
             "meta.siteName": "Juanma MC Portfolio",
             "meta.ogAlt": "Juanma MC Portfolio",
-            "meta.twitterTitle": "Juanma MC | Web Developer & Designer Portfolio",
+            "meta.twitterTitle": " - Juanma MC | Web Developer & Designer UI/UX",
             "meta.twitterDescription": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
 
             // Downladin Button
@@ -355,11 +355,11 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "theme.system": "Sistema",
 
             //Metadata
-            "meta.title": "Juanma MC | Desarrollador Web & Portfolio",
+            "meta.title": " - Juanma MC | Desarrollador Web & Diseñador UI/UX",
             "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
             "meta.siteName": "Portfolio de Juanma MC",
             "meta.ogAlt": "Portfolio de Juanma MC",
-            "meta.twitterTitle": "Juanma MC | Desarrollador Web & Portfolio",
+            "meta.twitterTitle": "Juanma MC | Desarrollador Web & Diseñador UI/UX",
             "meta.twitterDescription": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
 
             // Downladin Button
