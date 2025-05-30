@@ -102,6 +102,10 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "projects.fcbarcelona.subtitle": "FC Barcelona E-commerce",
             "projects.fcbarcelona.description":
                 "This website was created with Shopify. The main website is hosted on Amazon Web Services (AWS) and uses a specialized CMS called Ubiquo Sports.",
+            "projects.lamasia_fcb.title": "La Masia - FC Barcelona",
+            "projects.lamasia_fcb.subtitle": "Website dedicated to the FC Barcelona youth team",
+            "projects.lamasia_fcb.description":
+                "This website was created with Shopify. This time, I started the project but didn't finish it. It was initially created with Pug (rendered HTML5), Sass, and Gulp",
             "projects.mapfre.title": "Mapfre",
             "projects.mapfre.subtitle": "Insurance E-commerce",
             "projects.mapfre.description": 
@@ -278,6 +282,10 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "projects.fcbarcelona.subtitle": "E-commerce del FC Barcelona",
             "projects.fcbarcelona.description":
                 "Esta web fue creada con Shopify. El sitio web principal está alojado en Amazon Web Services (AWS) y utiliza un CMS especializado llamado Ubiquo Sports.",
+            "projects.lamasia_fcb.title": "La masia - FC Barcelona",
+            "projects.lamasia_fcb.subtitle": "Web dedicada a la cantera del FC Barcelona",
+            "projects.lamasia_fcb.description":
+                "Esta web fue creada con Shopify. En esta ocasión, emepecé el proyecto pero no llegué a terminarlo. Se empezó a crear con Pug (HTML5 procesado) Sass y Gulp",
             "projects.mapfre.title": "Mapfre",
             "projects.mapfre.subtitle": "E-commerce de Seguros",
             "projects.mapfre.description":

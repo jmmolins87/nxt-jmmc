@@ -132,11 +132,11 @@ export default function Portfolio() {
     },
     {
       id: 7,
-      title: t("projects.fcbarcelona.title"),
-      subtitle: t("projects.fcbarcelona.subtitle"),
-      description: t("projects.fcbarcelona.description"),
+      title: t("projects.lamasia_fcb.title"),
+      subtitle: t("projects.lamasia_fcb.subtitle"),
+      description: t("projects.lamasia_fcb.description"),
       tags: ["Pug", "Gulp", "NodeJS"],
-      image: "/projects/lamasia_fcbarcelona.png",
+      image: "/projects/lamasia_fcb.png",
       demo: "https://www.fcbarcelona.es/es/club/identidad/la-masia",
       code: ""
     },
