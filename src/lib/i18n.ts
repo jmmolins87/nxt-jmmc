@@ -317,7 +317,7 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "projects.unicaja.description":
                 "En este caso, es el proyecto en el que estoy actualmente, creando componentes reutilizables para los desarrollades de Unicaja. Estos componentes están hechos en React y los estilos con Styled Components y se utilizan en diversas aplicaciones del banco, mejorando la eficiencia y consistencia del desarrollo.",
             "projects.servegraf.title": "Servegraf Imprenta",
-            "projects.servegraf.subtitle": "E-commerce de imprenta",
+            "projects.servegraf.subtitle": "E-commerce de artea gráficas",
             "projects.servegraf.description":   
                 "Este proyecto es una imprenta online creada con WordPress. Permite a los usuarios personalizar y pedir productos de impresión como tarjetas de visita, folletos, carteles, revistas, libros y cartelería. Fue uno de mis primeros proyectos de desarrollo web, donde aprendí a integrar el diseño gráfico con la funcionalidad web.",
             "projects.pmbalaguer.title": "Peña Madridista Balaguer",
