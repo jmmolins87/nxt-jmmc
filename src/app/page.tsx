@@ -225,7 +225,7 @@ export default function Portfolio() {
       title: t("projects.florLoto.title"),
       subtitle: t("projects.florLoto.subtitle"),
       description: t("projects.florLoto.description"),
-      tags: ["Angular", "Sass", "Node.js", "Netlify"],
+      tags: ["Angular", "Sass", "Node.js","pimeNg", "Netlify"],
       image: "/projects/flordloto.png",
       demo: "https://flordlotosegovia.com/",
       code: "https://github.com/jmmolins87/ng-flor-loto"
