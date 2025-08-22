@@ -205,13 +205,23 @@ export default function Portfolio() {
       title: t("projects.bsantander.title"),
       subtitle: t("projects.bsantander.subtitle"),
       description: t("projects.bsantander.description"),
-      tags: ["Angular", "Sass", "Storybook", "StencilJs", "PHP", "Jenkins", "Docker", "AWS", "Sonar"],
+      tags: ["Angular", "Sass", "Storybook", "StencilJs", "Jenkins", "Sonar"],
       image: "/projects/banco_santander.png",
       demo: "https://www.bancosantander.es/particulares",
       code: ""
     }, 
     {
       id: 15,
+      title: t("projects.unicaja.title"),
+      subtitle: t("projects.unicaja.subtitle"),
+      description: t("projects.unicaja.description"),
+      tags: ["React", "Styled Components", "Storybook"],
+      image: "/projects/unicaja.png",
+      demo: "https://www.unicajabanco.es/es/particulares",
+      code: ""
+    }, 
+    {
+      id: 16,
       title: t("projects.florLoto.title"),
       subtitle: t("projects.florLoto.subtitle"),
       description: t("projects.florLoto.description"),
@@ -221,7 +231,7 @@ export default function Portfolio() {
       code: "https://github.com/jmmolins87/ng-flor-loto"
     },
     {
-      id: 16,
+      id: 17,
       title: t("projects.jmmcdev.title"),
       subtitle: t("projects.jmmcdev.subtitle"),
       description: t("projects.jmmcdev.description"),

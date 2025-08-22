@@ -8,6 +8,9 @@ import i18n from "i18next";
 export const resources: Record<string, { translation: Record<string, string> }> = {
     en: {
         translation: {
+            // ProjectCard Show More/Less
+            "projects.showMore": "Read more",
+            "projects.showLess": "Show less",
             // Navigation
             "nav.home": "Home",
             "nav.about": "About",
@@ -122,6 +125,10 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "projects.bsantander.subtitle": "Digital Banking Platform",
             "projects.bsantander.description":
                 "In this project, I started in the Stock Exchanges and Markets department, and I also worked on the retail side. Then, I worked on creating reusable components in StencilJS. These components are used in various bank applications, improving development efficiency and consistency. These components were also displayed in a library created with Storybook, where all the developed components are displayed so that the Squads can see which components are most beneficial depending on the development they need to do. I was also involved in creating components for calculating rates, loans, leasing, and guarantees.",
+            "projects.unicaja.title": "Unicaja",
+            "projects.unicaja.subtitle": "Digital Banking Platform",
+            "projects.unicaja.description":
+                "In my current project, I am building reusable components for Unicaja developers. These components are developed in React and styled with Styled Components, and they are used across various banking applications, improving both development efficiency and consistency.",
             "projects.servegraf.title": "Servegraf Printing",
             "projects.servegraf.subtitle": "Printing E-commerce",
             "projects.servegraf.description":
@@ -188,6 +195,9 @@ export const resources: Record<string, { translation: Record<string, string> }> 
     },
     es: {
         translation: {
+            // ProjectCard Show More/Less
+            "projects.showMore": "Leer más",
+            "projects.showLess": "Mostrar menos",
             // Navigation
             "nav.home": "Inicio",
             "nav.about": "Sobre Mí",
@@ -302,9 +312,13 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "projects.bsantander.subtitle": "Plataforma de banca digital",
             "projects.bsantander.description":
                 "En este proyecto empecé en el apartado de Bolsas y Mercados, también estuve en la parte de particulares. Luego, trabajé en la creación de componentes reutilizables en StencilJS. Estos componentes se utilizan en diversas aplicaciones del banco, mejorando la eficiencia y consistencia del desarrollo. Así como, dichos componentes se mostraban en una librería creada con Storybook, dónde están todos los componentes desarrollados para que los Squads vean que componentes les beneficia más según el desarrllo que tengan que hacer. También estuve involucrado en la creación de componentes para el cálculo de tasas, créditos, leasing y avales.",
-                "projects.servegraf.title": "Servegraf Imprenta",
-                "projects.servegraf.subtitle": "E-commerce de imprenta",
-                "projects.servegraf.description":
+            "projects.unicaja.title": "Unicaja",
+            "projects.unicaja.subtitle": "Plataforma de banca digital",
+            "projects.unicaja.description":
+                "En este caso, es el proyecto en el que estoy actualmente, creando componentes reutilizables para los desarrollades de Unicaja. Estos componentes están hechos en React y los estilos con Styled Components y se utilizan en diversas aplicaciones del banco, mejorando la eficiencia y consistencia del desarrollo.",
+            "projects.servegraf.title": "Servegraf Imprenta",
+            "projects.servegraf.subtitle": "E-commerce de imprenta",
+            "projects.servegraf.description":   
                 "Este proyecto es una imprenta online creada con WordPress. Permite a los usuarios personalizar y pedir productos de impresión como tarjetas de visita, folletos, carteles, revistas, libros y cartelería. Fue uno de mis primeros proyectos de desarrollo web, donde aprendí a integrar el diseño gráfico con la funcionalidad web.",
             "projects.pmbalaguer.title": "Peña Madridista Balaguer",
             "projects.pmbalaguer.subtitle": "Portal para la Peña Madridista Balaguer",

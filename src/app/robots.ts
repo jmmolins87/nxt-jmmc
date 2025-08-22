@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: "/private/",
         },
-        sitemap: "https://jmmc.com/sitemap.xml",
+        sitemap: "https://jmmc.vercel.app/sitemap.xml",
     }
 }
