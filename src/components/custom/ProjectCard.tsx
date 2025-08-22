@@ -34,23 +34,48 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
   const { t } = useTranslation();
   const [showFull, setShowFull] = useState(false);
   const [isLongText, setIsLongText] = useState(false);
+  const [maxHeight, setMaxHeight] = useState<string>('4.2em'); // 3 lines * 1.4em (aprox line-height)
   const descRef = useRef<HTMLParagraphElement>(null);
 
+  // Medir si el texto es largo
   useEffect(() => {
     if (descRef.current) {
-      if (!showFull) {
-        descRef.current.classList.add('line-clamp-3');
-        setTimeout(() => {
-          if (descRef.current) {
-            setIsLongText(descRef.current.scrollHeight > descRef.current.clientHeight + 1);
-          }
-        }, 30);
-      } else {
-        descRef.current.classList.remove('line-clamp-3');
-        setIsLongText(false);
-      }
+      // Forzar clamp para medir si el texto es largo
+      descRef.current.classList.add('line-clamp-3');
+      setTimeout(() => {
+        if (descRef.current) {
+          setIsLongText(descRef.current.scrollHeight > descRef.current.clientHeight + 1);
+        }
+      }, 30);
     }
-  }, [description, showFull]);
+  }, [description]);
+
+  // Transición de altura con clamping solo después de la animación al colapsar
+  useEffect(() => {
+    if (!descRef.current) return;
+    const el = descRef.current;
+    const transitionMs = 400;
+    if (showFull) {
+      // Expandir: quitar clamp antes de animar
+      el.classList.remove('line-clamp-3');
+      setTimeout(() => {
+        if (el) setMaxHeight(el.scrollHeight + 'px');
+      }, 10); // pequeño delay para asegurar el repaint
+    } else {
+      // Colapsar: animar maxHeight, luego aplicar clamp
+      if (el) setMaxHeight(el.scrollHeight + 'px');
+      setTimeout(() => {
+        setMaxHeight('4.2em');
+        // Después de la transición, aplicar clamp
+        setTimeout(() => {
+          if (el) el.classList.add('line-clamp-3');
+        }, transitionMs);
+      }, 10);
+      // Quitar clamp antes de animar (por si acaso)
+      el.classList.remove('line-clamp-3');
+    }
+    // eslint-disable-next-line
+  }, [showFull, description]);
 
   return (
     <Card className="overflow-hidden group h-full flex flex-col hover:shadow-lg hover:shadow-gray-300 dark:shadow-zinc-950  transition-all">
@@ -73,7 +98,14 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
               <p
                 ref={descRef}
                 className={`text-sm text-muted-foreground break-words`}
-                style={{ marginBottom: 0, lineHeight: '1.3em', transition: 'all 0.4s cubic-bezier(0.4,0,0.2,1)' }}
+                style={{
+                  marginBottom: 0,
+                  lineHeight: '1.4em',
+                  maxHeight: maxHeight,
+                  overflow: 'hidden',
+                  transition: 'max-height 0.4s cubic-bezier(0.4,0,0.2,1)',
+                  WebkitTransition: 'max-height 0.4s cubic-bezier(0.4,0,0.2,1)'
+                }}
               >
                 {description}
               </p>
