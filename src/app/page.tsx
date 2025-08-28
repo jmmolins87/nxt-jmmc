@@ -270,6 +270,8 @@ export default function Portfolio() {
       { name: "Git & GitHub", level: 85 },
       { name: "Docker", level: 40 },
       { name: "Jenkins", level: 80 },
+      { name: "Netlify", level: 80 },
+      { name: "Vercel", level: 80 },
       { name: "Sonar", level: 80 },
       { name: "AWS", level: 35 },
       { name: "Wordpress", level: 55 },
