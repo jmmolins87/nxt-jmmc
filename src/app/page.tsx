@@ -253,10 +253,10 @@ export default function Portfolio() {
       { name: "Angular", level: 85 },
       { name: "Storybook", level: 80 },
       { name: "StencilJs", level: 70 },
-      { name: "React", level: 70 },
+      { name: "React", level: 80 },
       { name: "Vue.js", level: 45 },
-      { name: "Next.js", level: 80 },
-      { name: "Tailwind CSS", level: 80 },
+      { name: "Next.js", level: 65 },
+      { name: "Tailwind CSS", level: 90 },
       { name: "Bootstrap", level: 90 },
     ],
     backend: [
@@ -269,6 +269,8 @@ export default function Portfolio() {
     tools: [
       { name: "Git & GitHub", level: 85 },
       { name: "Docker", level: 40 },
+      { name: "Jenkins", level: 80 },
+      { name: "Sonar", level: 80 },
       { name: "AWS", level: 35 },
       { name: "Wordpress", level: 55 },
       { name: "Figma", level: 85 },
