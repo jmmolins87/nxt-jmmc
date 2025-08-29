@@ -7,15 +7,21 @@ import { useTranslation } from "react-i18next"
 
 import "@/lib/i18n.client";
 
-const FILE_URL = "/files/cv-Juanma_MC.pdf";
-const FILE_NAME = "cv-Juanma_MC.pdf";
+
 
 export function DownloadButton() {
 
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation();
+
 
     const [progress, setProgress] = useState(0);
     const [downloading, setDownloading] = useState(false);
+
+    // Selección dinámica de archivo según idioma
+    const lang = i18n.language || 'es';
+    const isEnglish = lang.startsWith('en');
+    const FILE_URL = isEnglish ? "/files/cv-Juanma_MC_EN.pdf" : "/files/cv-Juanma_MC.pdf";
+    const FILE_NAME = isEnglish ? "cv-Juanma_MC_EN.pdf" : "cv-Juanma_MC.pdf";
 
     const handleDownload = async () => {
         setDownloading(true);
