@@ -20,6 +20,7 @@ import { HeroSection } from "@/components/sections/HeroSection"
 import { StructuredData } from "@/components/seo/StructuredData"
 import { ProjectsSection } from "@/components/sections/ProjectsSection"
 import { SkillsSection } from "@/components/sections/SkillsSection"
+import { AIAgencySection } from "@/components/sections/AIAgencySection"
 import { ButtonToTop } from "@/components/custom/ButtonToTop"
 import { DownloadButton } from "@/components/custom/DownloadButton"
 
@@ -38,7 +39,7 @@ export default function Portfolio() {
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "projects", "skills", "contact"]
+      const sections = ["home", "about", "projects", "skills", "aiagency", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -341,6 +342,7 @@ export default function Portfolio() {
         <AboutSection scrollToSection={scrollToSection} jobs={jobs} />
         <ProjectsSection projects={projects} />
         <SkillsSection skills={skills} />
+        <AIAgencySection />
         <ContactSection />
       </main>
 

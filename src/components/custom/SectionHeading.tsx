@@ -18,8 +18,8 @@ export function SectionHeading({ title }: SectionHeadingProps) {
   }, [])
 
   return (
-    <div className="flex justify-center items-center mb-10" ref={ref}>
-      <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 relative inline-block">
+    <div className="flex justify-center items-center mb-2" ref={ref}>
+      <h2 className="text-3xl font-bold tracking-tighter text-center mb-2 relative inline-block">
         {title}
         <span
           className={`block absolute left-1/2 -translate-x-1/2 bottom-0 h-1 bg-primary rounded transition-all duration-700

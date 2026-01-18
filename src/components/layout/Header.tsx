@@ -12,6 +12,7 @@ import {
   User,
   Briefcase,
   Cpu,
+  Sparkles,
   Contact
 } from "lucide-react"
 
@@ -99,6 +100,13 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
             {t("nav.skills")}
           </NavLink>
           <NavLink
+            icon={<Sparkles className="h-4 w-4 mr-1" />}
+            active={activeSection === "aiagency"}
+            onClick={() => scrollToSection("aiagency")}
+          >
+            {t("nav.aiagency")}
+          </NavLink>
+          <NavLink
             icon={<Contact className="h-4 w-4 mr-1" />}
             active={activeSection === "contact"}
             onClick={() => scrollToSection("contact")}
@@ -165,6 +173,16 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
                 }}
               >
                 {t("nav.skills")}
+              </MobileNavLink>
+              <MobileNavLink
+                icon={<Sparkles className="h-5 w-5 mr-2" />}
+                active={activeSection === "aiagency"}
+                onClick={() => {
+                  scrollToSection("aiagency")
+                  setIsSheetOpen(false)
+                }}
+              >
+                {t("nav.aiagency")}
               </MobileNavLink>
               <MobileNavLink
                 icon={<Contact className="h-5 w-5 mr-2" />}

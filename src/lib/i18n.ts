@@ -16,6 +16,7 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "nav.about": "About",
             "nav.projects": "Projects",
             "nav.skills": "Skills",
+            "nav.aiagency": "AI Agency",
             "nav.contact": "Contact",
             "nav.menu": "Menu",
 
@@ -191,6 +192,18 @@ export const resources: Record<string, { translation: Record<string, string> }> 
 
             // Downladin Button
             "download.button": "Downloading",
+
+            // AI Agency Section
+            "aiagency.title": "AI Agency",
+            "aiagency.comingSoon": "Coming Soon",
+            "aiagency.description": "We are developing innovative AI solutions to transform your business. From intelligent automation to personalized recommendations, our agency will help you leverage the power of artificial intelligence.",
+            "aiagency.service1.title": "Intelligent Automation",
+            "aiagency.service1.description": "Automate repetitive processes and optimize your operations with AI-powered solutions.",
+            "aiagency.service2.title": "Predictive Analysis",
+            "aiagency.service2.description": "Make data-driven decisions with advanced predictive models and analytics.",
+            "aiagency.service3.title": "Custom Solutions",
+            "aiagency.service3.description": "AI solutions designed specifically for your business needs and goals.",
+            "aiagency.stayTuned": "Stay tuned for updates on our AI services.",
         },
     },
     es: {
@@ -203,6 +216,7 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "nav.about": "Sobre Mí",
             "nav.projects": "Proyectos",
             "nav.skills": "Habilidades",
+            "nav.aiagency": "Agencia de IA",
             "nav.contact": "Contacto",
             "nav.menu": "Menú",
 
@@ -378,6 +392,18 @@ export const resources: Record<string, { translation: Record<string, string> }> 
 
             // Downladin Button
             "download.button": "Descargando",
+
+            // AI Agency Section
+            "aiagency.title": "Agencia de IA",
+            "aiagency.comingSoon": "Próximamente",
+            "aiagency.description": "Estamos desarrollando soluciones innovadoras de inteligencia artificial para transformar tu negocio. Desde automatización inteligente hasta recomendaciones personalizadas, nuestra agencia te ayudará a aprovechar el poder de la IA.",
+            "aiagency.service1.title": "Automatización Inteligente",
+            "aiagency.service1.description": "Automatiza procesos repetitivos y optimiza tus operaciones con soluciones impulsadas por IA.",
+            "aiagency.service2.title": "Análisis Predictivo",
+            "aiagency.service2.description": "Toma decisiones basadas en datos con modelos predictivos y análisis avanzados.",
+            "aiagency.service3.title": "Soluciones Personalizadas",
+            "aiagency.service3.description": "Soluciones de IA diseñadas específicamente para las necesidades y objetivos de tu negocio.",
+            "aiagency.stayTuned": "Mantente atento a las novedades sobre nuestros servicios de IA.",
         },
     },
 }
