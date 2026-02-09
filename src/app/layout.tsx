@@ -1,13 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "./globals.css"
+import "@/styles/globals.css"
 
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Toaster } from "@/components/ui/sonner"
 import { Background } from "@/components/custom/Background"
 import { DynamicFavicon } from "@/components/custom/DynamicFavicon"
 import { SlidingTitle } from "@/components/custom/SlidingTitle"
+
 
 import { getMetadataTranslation } from "@/lib/i18n";
 
