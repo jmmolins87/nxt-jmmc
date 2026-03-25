@@ -30,10 +30,13 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
     const { t } = useTranslation()
 
     return (
-        <section id="projects" className="py-20 min-h-screen flex flex-col justify-center items-center">
+        <section id="projects" className="section-shell flex min-h-screen items-center">
             <div className="container mx-auto px-4 md:px-6">
+                <div className="section-intro">
+                    <span className="section-kicker">Selected Work</span>
+                </div>
                 <SectionHeading title={t("projects.title")} />
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.id}
@@ -47,8 +50,10 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                         />
                     ))}
                 </div>
-                <p className="text-sm mt-10">{t("projects.moreInfo1")}</p>
-                <p className="text-sm mt-3">{t("projects.moreInfo2")}</p>
+                <div className="panel-surface mt-10 p-6">
+                    <p className="text-sm text-muted-foreground">{t("projects.moreInfo1")}</p>
+                    <p className="mt-3 text-sm text-muted-foreground">{t("projects.moreInfo2")}</p>
+                </div>
             </div>
         </section>
     )

@@ -66,12 +66,12 @@ export function DownloadButton() {
     };
 
     return (
-        <div className="fixed bottom-6 left-6 z-50">
+        <div className="fixed bottom-5 left-4 z-50 sm:bottom-6 sm:left-6">
             <button
                 onClick={handleDownload}
                 disabled={downloading}
                 className="
-                    flex justify-center items-center relative w-12 h-12 rounded-full bg-primary text-white border border-primary/30 dark:border-white/20 shadow-lg transition hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary/50 dark:text-slate-900 dark:bg-white dark:hover:bg-white/80
+                    relative flex h-12 w-12 items-center justify-center rounded-2xl border border-primary/30 bg-background/75 text-primary shadow-[0_20px_50px_-30px_rgba(14,165,233,0.9)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:bg-accent focus:outline-none focus:ring-2 focus:ring-primary/50
                 "
                 aria-label="Descargar CV"
             >
@@ -111,9 +111,9 @@ export function DownloadButton() {
             </button>
             {downloading && (
                 <span className="
-                    absolute left-3.5 bottom-[6px] translate-x-[50px] text-xs text-center mt-5
-                    bg-zinc-900 dark:bg-white text-white dark:text-primary-foreground
-                    px-2 py-1 rounded shadow
+                    absolute bottom-[58px] left-0 max-w-[160px] rounded-2xl border border-border/60
+                    bg-background/85 px-3 py-2 text-center text-xs text-foreground shadow backdrop-blur-xl
+                    sm:bottom-[6px] sm:left-3.5 sm:max-w-none sm:translate-x-[50px] sm:rounded-full sm:px-3 sm:py-1
                 ">
                     {t("download.button")}... {progress}%
                 </span>

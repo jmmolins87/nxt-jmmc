@@ -4,7 +4,6 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { useTranslation } from "react-i18next"
 import {
   Menu,
@@ -28,6 +27,7 @@ import { Separator } from "@/components/ui/separator"
 import { ThemeToggle } from "@/components/ThemeToggle"
 import { LanguageToggle } from "@/components/LanguageToggle"
 import { NavLink, MobileNavLink } from "@/components/custom/NavLink"
+import { BrandMark } from "@/components/custom/BrandMark"
 
 interface HeaderProps {
   activeSection: string
@@ -38,38 +38,19 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
   const { t } = useTranslation()
   const [isSheetOpen, setIsSheetOpen] = useState(false)
 
-  return (
-    <header className="sticky top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-6">
+    return (
+    <header className="sticky top-0 left-0 right-0 z-50 px-3 pt-3 md:px-6">
+      <div className="container mx-auto flex h-16 items-center justify-between rounded-full border border-border/60 bg-background/72 px-4 shadow-[0_20px_60px_-35px_rgba(14,165,233,0.55)] backdrop-blur-xl md:px-6">
         <Link
           href="#home"
           onClick={() => scrollToSection("home")}
-          className="text-xl font-bold flex items-center gap-2"
+          className="flex items-center gap-3 text-xl font-bold"
         >
-          {/* Logo para modo claro */}
-          <Image
-            src="/logo/jmmc_logo_negro.svg"
-            alt="Logo"
-            title="Logo"
-            width={60}
-            height={65}
-            className="h-8 block dark:hidden"
-            priority
-          />
-          {/* Logo para modo oscuro */}
-          <Image
-            src="/logo/jmmc_logo_blanco.svg"
-            alt="Logo"
-            title="Logo"
-            width={60}
-            height={65}
-            className="h-8 hidden dark:block"
-            priority
-          />
+          <BrandMark compact className="lg:hidden" />
+          <BrandMark className="hidden lg:flex" />
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-2 rounded-full border border-white/10 bg-background/40 p-1">
           <NavLink
             icon={<Home className="h-4 w-4 mr-1" />}
             active={activeSection === "home"}
@@ -115,25 +96,24 @@ export function Header({ activeSection, scrollToSection }: HeaderProps) {
           </NavLink>
         </nav>
 
-        {/* Theme and Language toggles */}
         <div className="hidden md:flex items-center gap-2">
           <LanguageToggle />
           <ThemeToggle />
         </div>
 
-        {/* Mobile Menu Button */}
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <Button variant="outline" size="icon" className="md:hidden">
               <Menu className="h-6 w-6" />
               <span className="sr-only">{t("nav.menu")}</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right">
+          <SheetContent side="right" className="border-border/60 bg-background/95 backdrop-blur-2xl">
             <SheetHeader>
               <SheetTitle>{t("nav.menu")}</SheetTitle>
             </SheetHeader>
-            <nav className="flex flex-col gap-4 mt-6">
+            <nav className="mt-6 flex flex-col gap-4">
+              <BrandMark compact className="mb-2" />
               <MobileNavLink
                 icon={<Home className="h-5 w-5 mr-2" />}
                 active={activeSection === "home"}

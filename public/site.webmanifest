@@ -1,0 +1,21 @@
+{
+  "name": "Juanma MC Portfolio",
+  "short_name": "Juanma MC",
+  "description": "Portfolio de Juanma MC, web developer y designer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#22d3ee",
+  "icons": [
+    {
+      "src": "/favicon_light.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon_dark.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

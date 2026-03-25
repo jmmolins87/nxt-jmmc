@@ -79,8 +79,8 @@ export function ContactForm() {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                <div className="flex flex-col md:flex-row justify-between items-start gap-3">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+                <div className="flex flex-col items-start justify-between gap-4 md:flex-row">
                     <FormField
                         control={form.control}
                         name="name"

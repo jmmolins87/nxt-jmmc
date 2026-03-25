@@ -315,9 +315,14 @@ export default function Portfolio() {
       description: t("about.ibm.description"),
     },
     {
-      date: `2023 - ${t("about.job.actuality")}`,
+      date: "2023 - 2025",
       title: t("about.accenture.title"),
       description: t("about.accenture.description"),
+    },
+    {
+      date: `Nov. 2025 - ${t("about.job.actuality")}`,
+      title: t("about.custos.title"),
+      description: t("about.custos.description"),
     }
   ];
 

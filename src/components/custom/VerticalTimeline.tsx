@@ -42,31 +42,35 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ items }) => {
     }, [items.length]);
 
     return (
-        <div className="relative flex flex-col items-center py-8 pr-0 overflow-visible md:overflow-y-auto sm:max-h-[calc(100vh-400px)] md:max-h-[calc(100vh-0px)] lg:max-h-[calc(100vh-200px)] xl:h-full">
-            <div className="relative w-full md:pr-3">
-                {/* Línea vertical */}
-                <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-200 transition-all duration-1000 dark:bg-gray-700" aria-hidden="true" />
+        <div className="relative flex flex-col items-center overflow-visible py-8 pr-0 md:overflow-y-auto md:pr-2 [scrollbar-gutter:stable] sm:max-h-[calc(100vh-400px)] md:max-h-[calc(100vh-0px)] lg:max-h-[calc(100vh-200px)] xl:h-full">
+            <div className="relative w-full">
+                <div
+                    className="absolute left-3 top-0 h-full w-[2px] -translate-x-1/2 bg-gradient-to-b from-primary/0 via-primary/40 to-primary/0 transition-all duration-1000 md:left-1/2 md:-translate-x-1/2"
+                    aria-hidden="true"
+                />
                 <ul className="w-full space-y-12">
                     {items.map((item, idx) => (
                         <li
                             key={idx}
                             ref={el => { itemRefs.current[idx] = el; }}
-                            className={`relative flex items-center group transition-all duration-700 ${visibleItems[idx] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+                            className={`group relative flex items-center transition-all duration-700 ${visibleItems[idx] ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
                             style={{ transitionDelay: `${idx * 120}ms` }}
                         >
-                            {/* Punto animado */}
                             <span
-                                className={`z-10 flex h-6 w-6 items-center justify-center rounded-full bg-white border-4 border-gray-300 transition-transform duration-500 group-hover:scale-125 absolute left-1/2 -translate-x-1/2`}
+                                className="absolute left-3 z-10 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border border-primary/40 bg-background shadow-[0_0_25px_rgba(14,165,233,0.35)] transition-transform duration-500 group-hover:scale-125 md:left-1/2"
                                 style={{ top: 0 }}
                             >
-                                <span className="block h-2 w-2 rounded-full bg-gray-400 animate-pulse" />
+                                <span className="block h-2.5 w-2.5 rounded-full bg-primary animate-pulse" />
                             </span>
-                            {/* Contenido */}
-                            <div className={`md:ml-8 w-full ${idx % 2 === 0 ? "text-left" : "text-right"}`}>
-                                <div className="text-gray-400 font-bold text-sm dark:text-gray-500">{item.date}</div>
+                            <div
+                                className={`w-full pl-10 pr-5 text-left md:pl-0 md:pr-0 ${
+                                    idx % 2 === 0 ? "md:pr-14 md:text-left" : "md:pl-14 md:pr-6 md:text-right"
+                                }`}
+                            >
+                                <div className="text-sm font-bold uppercase tracking-[0.2em] text-primary/80">{item.date}</div>
                                 <div className="text-lg font-semibold">{item.title}</div>
                                 {item.description && (
-                                    <div className="text-gray-500 dark:text-gray-400">{item.description}</div>
+                                    <div className="max-w-full text-muted-foreground">{item.description}</div>
                                 )}
                             </div>
                         </li>

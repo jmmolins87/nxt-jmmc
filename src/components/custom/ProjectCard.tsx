@@ -74,30 +74,30 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
       // Quitar clamp antes de animar (por si acaso)
       el.classList.remove('line-clamp-3');
     }
-    // eslint-disable-next-line
   }, [showFull, description]);
 
   return (
-    <Card className="overflow-hidden group h-full flex flex-col hover:shadow-lg hover:shadow-gray-300 dark:shadow-zinc-950  transition-all">
-      <div className="relative aspect-video overflow-hidden">
+    <Card className="group flex h-full flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-primary/40">
+      <div className="relative aspect-video overflow-hidden border-b border-border/60">
         <Image
           src={imageUrl || "/vercel.svg"}
           alt={`Project: ${title}`}
           title={`Project: ${title}`}
           width={500}
           height={300}
-          className="object-cover transition-transform group-hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent opacity-80" />
       </div>
-      <CardContent className="flex flex-col justify-between p-4 pt-0 flex-grow">
-        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-        <h3 className="text-lg font-semibold mb-2">{subtitle}</h3>
+      <CardContent className="flex flex-grow flex-col justify-between p-5 pt-5">
+        <h2 className="mb-2 text-2xl font-semibold">{title}</h2>
+        <h3 className="mb-3 text-base font-medium text-primary/90">{subtitle}</h3>
         <div>
           <div className="mb-4">
             <div>
               <p
                 ref={descRef}
-                className={`text-sm text-muted-foreground break-words`}
+                className="break-words text-sm leading-6 text-muted-foreground"
                 style={{
                   marginBottom: 0,
                   lineHeight: '1.4em',
@@ -116,6 +116,7 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
                   variant="ghost"
                   size="sm"
                   onClick={() => setShowFull((v) => !v)}
+                  className="rounded-full px-0 text-primary hover:bg-transparent"
                 >
                   {showFull ? t("projects.showLess") : t("projects.showMore")}
                   {showFull ? <ChevronUp className="ml-1 w-4 h-4" /> : <ChevronDown className="ml-1 w-4 h-4" />}
@@ -126,21 +127,21 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
         </div>
         <div className="flex flex-wrap gap-2 mt-auto">
           {tags.map((tag) => (
-            <Badge key={tag} variant="secondary" className="text-xs">
+            <Badge key={tag} variant="secondary" className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-primary">
               {tag}
             </Badge>
           ))}
         </div>
       </CardContent>
-      <CardFooter className="p-4 pt-0 flex gap-2">
+      <CardFooter className="flex flex-col gap-2 p-5 pt-0 sm:flex-row">
         {
           demo ? (
             <Link 
               href={demo} 
               target="_blank" 
               title={title}
-              className="flex-1">
-              <Button variant="outline" size="sm" className="w-full shadow-md">
+              className="w-full flex-1">
+              <Button variant="outline" size="sm" className="w-full">
                 <ExternalLink className="h-4 w-4 mr-2" />
                 {t("projects.demo")}
               </Button>
@@ -156,9 +157,9 @@ export function ProjectCard({ title, subtitle, description, imageUrl, tags = [],
                 href={code}
                 target="_blank"
                 title={title}
-                className="flex-1">
-                <Button variant="outline" size="sm" className="w-full shadow-md">
-                  <Github className="h-12 w-12" />
+                className="w-full flex-1">
+                <Button variant="outline" size="sm" className="w-full">
+                  <Github className="h-4 w-4 mr-2" />
                   {t("projects.code")}
                 </Button>
               </Link>

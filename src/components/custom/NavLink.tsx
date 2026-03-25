@@ -18,7 +18,7 @@ export function NavLink({ children, active, onClick, icon }: NavLinkProps) {
     return (
         <button
             onClick={onClick}
-            className={`py-2 px-3 text-sm font-medium transition-colors rounded-md hover:bg-muted flex items-center ${active ? "text-primary bg-muted" : "text-muted-foreground"
+            className={`flex items-center rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 ${active ? "bg-primary text-primary-foreground shadow-[0_16px_40px_-24px_hsl(var(--primary)/0.85)]" : "text-muted-foreground hover:bg-accent/70 hover:text-foreground"
                 }`}
         >
             {icon}
@@ -31,7 +31,7 @@ export function MobileNavLink({ children, active, onClick, icon }: NavLinkProps)
     return (
         <button
             onClick={onClick}
-            className={`py-2 px-3 text-sm font-medium transition-colors rounded-md hover:bg-muted flex items-center w-full ${active ? "text-primary bg-muted" : "text-muted-foreground"
+            className={`flex w-full items-center rounded-2xl px-4 py-3 text-sm font-medium transition-all duration-300 ${active ? "bg-primary text-primary-foreground shadow-[0_16px_40px_-24px_hsl(var(--primary)/0.85)]" : "text-muted-foreground hover:bg-accent/70 hover:text-foreground"
                 }`}
         >
             {icon}

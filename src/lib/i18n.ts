@@ -22,20 +22,28 @@ export const resources: Record<string, { translation: Record<string, string> }> 
 
             // Hero Section
             "hero.greeting": "Hi, I'm",
-            "hero.role": "Web Developer & Designer",
+            "hero.role": "Fullstack Developer, AI & Automation Builder",
             "hero.description":
-                "I create attractive and functional digital experiences that help businesses achieve their goals.",
+                "I build fullstack digital products, AI-driven solutions, and automations that help businesses move faster and create real value.",
             "hero.viewProjects": "View Projects",
             "hero.contact": "Contact",
 
             // About Section
             "about.title": "About Me",
             "about.description1":
-                "I'm a passionate web developer with experience creating engaging and functional websites and applications. My journey in web development began 13 years ago, when I started working with my father as a graphic designer at his printing company. What began as an immersion in the world of visual design evolved over time into my true passion: web application development, a field in which I've managed to combine creativity and technology to build innovative digital solutions.",
+                "I'm a fullstack developer with 13+ years of experience building digital products from idea to delivery. I started in graphic design at my father's print shop, and that visual foundation evolved into a broader profile where I connect product thinking, development, and execution.",
             "about.description2":
-                "Since then, I've worked on various projects that have allowed me to hone my skills and knowledge. I specialize in front-end technologies like Angular, React, Next.js, Bootstrap, and Tailwind CSS, but I also have experience with back-end technologies and databases like MongoDB and MSQL, allowing me to develop complete and functional projects.",
+                "Over the years I've worked across the full stack, contributing to interfaces, business logic, integrations, and scalable product experiences. Today I also bring strong applied AI skills, designing automations and intelligent workflows that make products more useful, efficient, and competitive. I enjoy turning complex needs into clear digital solutions, with a practical approach that balances technical quality, usability, and business impact.",
             "about.description3":
-                "When I'm not coding, I enjoy spending time with my friends, traveling, playing sports, spending time with my family, and socializing with new people—activities that help me maintain a healthy work-life balance. staff.", 
+                "I enjoy working where design, engineering, and practical innovation meet. I'm especially motivated by projects that require structure, initiative, and the ability to connect ideas with execution. Outside work, I value travel, sports, family, and meaningful conversations, which help me stay curious, balanced, and creative.", 
+            "about.snapshot": "Professional Snapshot",
+            "about.mobileHeading": "Fullstack development shaped by design, product thinking, applied AI, and useful automations.",
+            "about.timelineEyebrow": "Career Path",
+            "about.timelineTitle": "Experience Timeline",
+            "about.timelineDescription": "A progression from visual design into fullstack product development, reusable systems, automations, and applied AI solutions.",
+            "about.stats.years": "Years building",
+            "about.stats.roles": "Key roles",
+            "about.stats.focus": "Profile",
             "about.contactMe": "Contact Me",
 
             // Timeline About Section
@@ -69,6 +77,10 @@ export const resources: Record<string, { translation: Record<string, string> }> 
                 "Front Developer at Accenture",
             "about.accenture.description":
                 "For supplier reasons, I changed companies, but I'm still working on the same Banco Santander project, but creating reusable components in StencilJS for the rest of the project's Squads.I'm currently working on the front-end side, calculating rates, loans, leasing, and guarantees.",
+            "about.custos.title":
+                "Fullstack Developer at Custos Mobiel",
+            "about.custos.description":
+                "I lead the frontend side of the company's applications, working in a fullstack environment with a fast delivery mindset and a vibe coding approach focused on shipping useful product increments.",
 
             // Projects Section
             "projects.title": "My Projects",
@@ -183,27 +195,28 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "theme.system": "System",
 
             //Metadata
-            "meta.title": "Juanma MC | Web Developer & Designer UI/UX",
-            "meta.description": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
+            "meta.title": "Juanma MC | Fullstack Developer, AI & Automation Builder",
+            "meta.description": "Fullstack developer building digital products, scalable systems, AI-driven solutions, and automations for modern businesses.",
             "meta.siteName": "Juanma MC Portfolio",
             "meta.ogAlt": "Juanma MC Portfolio",
-            "meta.twitterTitle": " - Juanma MC | Web Developer & Designer UI/UX",
-            "meta.twitterDescription": "Professional web developer and designer specializing in creating attractive and functional digital experiences.",
+            "meta.twitterTitle": "Juanma MC | Fullstack Developer, AI & Automation Builder",
+            "meta.twitterDescription": "Fullstack developer building digital products, scalable systems, AI-driven solutions, and automations for modern businesses.",
 
             // Downladin Button
             "download.button": "Downloading",
 
             // AI Agency Section
-            "aiagency.title": "AI Agency",
-            "aiagency.comingSoon": "Coming Soon",
-            "aiagency.description": "We are developing innovative AI solutions to transform your business. From intelligent automation to personalized recommendations, our agency will help you leverage the power of artificial intelligence.",
-            "aiagency.service1.title": "Intelligent Automation",
-            "aiagency.service1.description": "Automate repetitive processes and optimize your operations with AI-powered solutions.",
-            "aiagency.service2.title": "Predictive Analysis",
-            "aiagency.service2.description": "Make data-driven decisions with advanced predictive models and analytics.",
-            "aiagency.service3.title": "Custom Solutions",
-            "aiagency.service3.description": "AI solutions designed specifically for your business needs and goals.",
-            "aiagency.stayTuned": "Stay tuned for updates on our AI services.",
+            "aiagency.title": "AI Products",
+            "aiagency.live": "Production Ready",
+            "aiagency.description": "I build final web platforms and AI-powered applications designed to be used by real customers, not just shown in a pitch. The goal is simple: useful products, solid automations, and scalable experiences that solve business problems.",
+            "aiagency.service1.title": "AI Automations",
+            "aiagency.service1.description": "Automate repetitive operations, internal workflows, and customer processes with reliable AI-assisted systems.",
+            "aiagency.service2.title": "Business Applications",
+            "aiagency.service2.description": "Create final web apps and internal tools focused on usability, efficiency, and measurable business impact.",
+            "aiagency.service3.title": "Custom AI Solutions",
+            "aiagency.service3.description": "Design tailored AI features, assistants, and workflows aligned with your product, operations, and growth goals.",
+            "aiagency.visit": "Visit Clinvetia",
+            "aiagency.status": "Clinvetia is a real product already online, built as a final customer-facing web experience, not a demo concept.",
         },
     },
     es: {
@@ -222,20 +235,28 @@ export const resources: Record<string, { translation: Record<string, string> }> 
 
             // Hero Section
             "hero.greeting": "Hola, soy",
-            "hero.role": "Desarrollador Web & Diseñador",
+            "hero.role": "Desarrollador Fullstack, IA y Automatizaciones",
             "hero.description":
-                "Creo experiencias digitales atractivas y funcionales que ayudan a las empresas a alcanzar sus objetivos.",
+                "Construyo productos digitales fullstack, soluciones impulsadas por IA y automatizaciones que ayudan a las empresas a avanzar más rápido y generar valor real.",
             "hero.viewProjects": "Ver Proyectos",
             "hero.contact": "Contactar",
 
             // About Section
             "about.title": "Sobre Mí",
             "about.description1":
-                "Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones atractivas y funcionales. Mi viaje en el desarrollo web comenzó hace 13 años, cuando empecé trabajando con mi padre como diseñador gráfico en su imprenta. Lo que comenzó como una inmersión en el mundo del diseño visual evolucionó con el tiempo hacia mi verdadera pasión: el desarrollo de aplicaciones web, un campo en el que he logrado combinar creatividad y tecnología para construir soluciones digitales innovadoras.",
+                "Soy un desarrollador fullstack con más de 13 años de experiencia creando productos digitales de principio a fin. Empecé en el mundo del diseño gráfico en la imprenta de mi padre, y esa base visual evolucionó hacia un perfil más completo donde conecto visión de producto, desarrollo y ejecución.",
             "about.description2":
-                "Desde entonces, he trabajado en diversos proyectos que me han permitido perfeccionar mis habilidades y conocimientos. Me especializo en tecnologías frontend como Angular, React, Next.js, Bootstrap y Tailwind CSS, pero también tengo experiencia con el backend y bases de datos como MongoDB y MSQL, lo que me permite desarrollar proyectos completos y funcionales.",
+                "Con los años he trabajado en todo el stack, participando en interfaces, lógica de negocio, integraciones y experiencias de producto escalables. Hoy también aporto un muy buen manejo aplicado de la IA, diseñando automatizaciones y flujos inteligentes para hacer los productos más útiles, eficientes y competitivos. Me gusta transformar necesidades complejas en soluciones digitales claras, con un enfoque práctico que equilibra calidad técnica, usabilidad e impacto de negocio.",
             "about.description3":
-                "Cuando no estoy codificando, disfruto pasar tiempo con mis amigos, viajar, hacer deporte, estar con mi familia y socializar con gente nueva, actividades que me ayudan a mantener un equilibrio saludable entre el trabajo y la vida personal.",
+                "Me gusta trabajar en el punto donde se cruzan diseño, ingeniería e innovación práctica. Me motivan especialmente los proyectos que exigen estructura, iniciativa y capacidad para conectar ideas con ejecución real. Fuera del trabajo valoro viajar, hacer deporte, estar con mi familia y mantener conversaciones que me ayuden a seguir curioso, equilibrado y creativo.",
+            "about.snapshot": "Perfil profesional",
+            "about.mobileHeading": "Desarrollo fullstack con base en diseño, visión de producto, IA aplicada y automatizaciones útiles.",
+            "about.timelineEyebrow": "Trayectoria",
+            "about.timelineTitle": "Línea de experiencia",
+            "about.timelineDescription": "Una evolución desde el diseño visual hacia el desarrollo fullstack de producto, sistemas reutilizables, automatizaciones y soluciones aplicadas con IA.",
+            "about.stats.years": "Años creando",
+            "about.stats.roles": "Etapas clave",
+            "about.stats.focus": "Perfil",
             "about.contactMe": "Contactar",
 
             // Timeline About Section
@@ -269,6 +290,10 @@ export const resources: Record<string, { translation: Record<string, string> }> 
                 "Desarrollador front-end en Accenture",
             "about.accenture.description":
                 "Por motivos de proveedores, me cambié de empresa pero sigo en el mismo proyecto del Banco Santander, pero haciendo componentes reutilizables en StencilJS para el resto de Squads del proyecto. Acutalmente estoy en la parte de Front-End calculando tasas, créditos, leasing y avales",
+            "about.custos.title":
+                "Desarrollador fullstack en Custos Mobiel",
+            "about.custos.description":
+                "Me encargo de la parte frontal de todas las aplicaciones de la empresa, trabajando dentro de un entorno fullstack con un ritmo ágil de entrega y un enfoque de vibe coding orientado a sacar producto útil.",
 
             // Projects Section
             "projects.title": "Mis Proyectos",
@@ -383,27 +408,28 @@ export const resources: Record<string, { translation: Record<string, string> }> 
             "theme.system": "Sistema",
 
             //Metadata
-            "meta.title": " - Juanma MC | Desarrollador Web & Diseñador UI/UX",
-            "meta.description": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
+            "meta.title": "Juanma MC | Desarrollador Fullstack, IA y Automatizaciones",
+            "meta.description": "Desarrollador fullstack enfocado en productos digitales, sistemas escalables, soluciones con IA y automatizaciones.",
             "meta.siteName": "Portfolio de Juanma MC",
             "meta.ogAlt": "Portfolio de Juanma MC",
-            "meta.twitterTitle": "Juanma MC | Desarrollador Web & Diseñador UI/UX",
-            "meta.twitterDescription": "Desarrollador y diseñador web profesional especializado en crear experiencias digitales atractivas y funcionales.",
+            "meta.twitterTitle": "Juanma MC | Desarrollador Fullstack, IA y Automatizaciones",
+            "meta.twitterDescription": "Desarrollador fullstack enfocado en productos digitales, sistemas escalables, soluciones con IA y automatizaciones.",
 
             // Downladin Button
             "download.button": "Descargando",
 
             // AI Agency Section
-            "aiagency.title": "Agencia de IA",
-            "aiagency.comingSoon": "Próximamente",
-            "aiagency.description": "Estamos desarrollando soluciones innovadoras de inteligencia artificial para transformar tu negocio. Desde automatización inteligente hasta recomendaciones personalizadas, nuestra agencia te ayudará a aprovechar el poder de la IA.",
-            "aiagency.service1.title": "Automatización Inteligente",
-            "aiagency.service1.description": "Automatiza procesos repetitivos y optimiza tus operaciones con soluciones impulsadas por IA.",
-            "aiagency.service2.title": "Análisis Predictivo",
-            "aiagency.service2.description": "Toma decisiones basadas en datos con modelos predictivos y análisis avanzados.",
-            "aiagency.service3.title": "Soluciones Personalizadas",
-            "aiagency.service3.description": "Soluciones de IA diseñadas específicamente para las necesidades y objetivos de tu negocio.",
-            "aiagency.stayTuned": "Mantente atento a las novedades sobre nuestros servicios de IA.",
+            "aiagency.title": "Productos con IA",
+            "aiagency.live": "Listo para producción",
+            "aiagency.description": "Construyo plataformas web finales y aplicaciones impulsadas por IA pensadas para ser usadas por clientes reales, no solo para enseñarlas en una presentación. El objetivo es claro: productos útiles, automatizaciones sólidas y experiencias escalables que resuelvan problemas de negocio.",
+            "aiagency.service1.title": "Automatizaciones con IA",
+            "aiagency.service1.description": "Automatiza operaciones repetitivas, flujos internos y procesos de cliente con sistemas fiables asistidos por IA.",
+            "aiagency.service2.title": "Aplicaciones de Negocio",
+            "aiagency.service2.description": "Desarrollo web apps finales y herramientas internas centradas en usabilidad, eficiencia e impacto real en negocio.",
+            "aiagency.service3.title": "Soluciones IA a Medida",
+            "aiagency.service3.description": "Diseño funcionalidades, asistentes y flujos con IA alineados con tu producto, tu operativa y tus objetivos de crecimiento.",
+            "aiagency.visit": "Visitar Clinvetia",
+            "aiagency.status": "Clinvetia ya está online como producto real, construido como una experiencia web final para cliente, no como una demo conceptual.",
         },
     },
 }

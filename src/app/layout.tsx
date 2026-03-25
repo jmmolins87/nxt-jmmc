@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "@/styles/globals.css"
+import "@/app/globals.css"
 
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Toaster } from "@/components/ui/sonner"
@@ -68,17 +67,14 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   };
 }
 
-const inter = Inter({ subsets: ["latin"] })
-
-
 export default async function RootLayout({ children, params }: { children: React.ReactNode, params: { locale: string } }) {
 
   const lang = params?.locale || "es";
   const translatedTitle = getMetadataTranslation(lang, "meta.title", "Juanma MC | Web Developer & Designer Portfolio");
 
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang={lang} suppressHydrationWarning>
+      <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Background />
           <DynamicFavicon />

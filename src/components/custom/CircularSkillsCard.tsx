@@ -44,9 +44,8 @@ export function CircularSkillCard({ name, level, delay = 0 }: CircularSkillCardP
   const strokeDashoffset = circumference - (progress / 100) * circumference
 
   return (
-    <div ref={ref} className="flex flex-col items-center justify-center p-4">
-      <div className="relative w-[120px] h-[120px]">
-        {/* Background circle */}
+    <div ref={ref} className="rounded-[24px] border border-border/60 bg-background/35 p-4 text-center backdrop-blur-sm">
+      <div className="relative mx-auto h-[104px] w-[104px] sm:h-[120px] sm:w-[120px]">
         <svg className="w-full h-full -rotate-90" viewBox={`0 0 ${size} ${size}`}>
           <circle
             cx={size / 2}
@@ -57,7 +56,6 @@ export function CircularSkillCard({ name, level, delay = 0 }: CircularSkillCardP
             strokeWidth={strokeWidth}
             className="text-muted opacity-20"
           />
-          {/* Foreground circle with animation */}
           <circle
             cx={size / 2}
             cy={size / 2}
@@ -72,12 +70,11 @@ export function CircularSkillCard({ name, level, delay = 0 }: CircularSkillCardP
             style={{ strokeDashoffset, transition: "stroke-dashoffset 1.5s ease-out" }}
           />
         </svg>
-        {/* Percentage text in the middle */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-2xl font-bold">{Math.round(progress)}%</span>
+          <span className="text-2xl font-bold text-primary">{Math.round(progress)}%</span>
         </div>
       </div>
-      <h3 className="mt-4 text-center font-medium">{name}</h3>
+      <h3 className="mt-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-foreground">{name}</h3>
     </div>
   )
 }

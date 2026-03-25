@@ -22,7 +22,7 @@ export function ButtonToTop() {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-primary text-white border border-primary/30 dark:border-white/20 shadow-lg md:hidden transition hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary/50 dark:text-slate-900 dark:bg-white dark:hover:bg-white/80"
+          className="fixed bottom-5 right-4 z-50 rounded-2xl border border-primary/30 bg-background/75 p-3 text-primary shadow-[0_20px_50px_-30px_rgba(14,165,233,0.9)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:bg-accent md:hidden focus:outline-none focus:ring-2 focus:ring-primary/50"
           aria-label="Subir al inicio"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

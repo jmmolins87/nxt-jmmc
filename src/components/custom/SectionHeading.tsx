@@ -18,12 +18,13 @@ export function SectionHeading({ title }: SectionHeadingProps) {
   }, [])
 
   return (
-    <div className="flex justify-center items-center mb-2" ref={ref}>
-      <h2 className="text-3xl font-bold tracking-tighter text-center mb-2 relative inline-block">
+    <div className="mb-3 flex justify-center" ref={ref}>
+      <h2 className="relative inline-block text-center text-3xl font-bold tracking-tighter md:text-5xl">
         {title}
         <span
-          className={`block absolute left-1/2 -translate-x-1/2 bottom-0 h-1 bg-primary rounded transition-all duration-700
-            ${visible ? "w-2/3 opacity-100" : "w-0 opacity-0"}`}
+          className={`absolute -bottom-3 left-1/2 block h-1.5 -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-primary to-transparent transition-all duration-700 ${
+            visible ? "w-2/3 opacity-100" : "w-0 opacity-0"
+          }`}
           aria-hidden="true"
         />
       </h2>

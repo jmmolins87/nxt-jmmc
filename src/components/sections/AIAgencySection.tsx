@@ -2,10 +2,12 @@
 
 import { useTranslation } from "react-i18next"
 import "@/lib/i18n.client"
-import { Sparkles, Bot, Zap, Rocket } from "lucide-react"
+import Link from "next/link"
+import { Sparkles, Bot, Zap, Rocket, ArrowUpRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionHeading } from "@/components/custom/SectionHeading"
+import { Button } from "@/components/ui/button"
 
 export function AIAgencySection() {
     const { t } = useTranslation()
@@ -29,18 +31,21 @@ export function AIAgencySection() {
     ]
 
     return (
-        <section id="aiagency" className="py-20 min-h-screen flex flex-col justify-center items-baseline bg-gradient-to-b from-background to-muted/30">
+        <section id="aiagency" className="section-shell flex min-h-screen items-center">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="flex flex-col items-center justify-center gap-2 mb-12">
-                    <div className="flex items-start gap-3">
+                <div className="section-intro">
+                    <span className="section-kicker">Next Layer</span>
+                </div>
+                <div className="mb-12 flex flex-col items-center justify-center gap-2">
+                    <div className="flex flex-col items-center gap-3 text-center sm:flex-row sm:items-start sm:text-left">
                         <Sparkles className="h-8 w-8 text-primary animate-pulse" />
                         <SectionHeading title={t("aiagency.title")} />
                     </div>
                     <Badge 
                         variant="default" 
-                        className="text-sm px-4 py-1.5 animate-pulse bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg"
+                        className="rounded-full px-4 py-1.5 text-sm"
                     >
-                        {t("aiagency.comingSoon")}
+                        {t("aiagency.live")}
                     </Badge>
                 </div>
 
@@ -54,7 +59,7 @@ export function AIAgencySection() {
                     {services.map((service, index) => (
                         <Card 
                             key={index} 
-                            className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                            className="border-border/70 bg-card/65 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50"
                         >
                             <CardHeader className="space-y-4">
                                 <div className="flex justify-center">
@@ -73,10 +78,21 @@ export function AIAgencySection() {
                     ))}
                 </div>
 
-                <div className="mt-12 text-center">
+                <div className="panel-surface mx-auto mt-12 max-w-2xl p-5 text-center">
                     <p className="text-sm text-muted-foreground italic">
-                        {t("aiagency.stayTuned")}
+                        {t("aiagency.status")}
                     </p>
+                    <Link
+                        href="https://clinvetia.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex w-full justify-center sm:w-auto"
+                    >
+                        <Button variant="outline" className="w-full sm:w-auto">
+                            {t("aiagency.visit")}
+                            <ArrowUpRight className="h-4 w-4" />
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>
